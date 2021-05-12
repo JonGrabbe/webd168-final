@@ -3,7 +3,16 @@
 @import 'fonts';
 @import 'header';
 
-.drop-down-menu-arrow {
-    width: 30px;
+.arrow-link {
+    display: flex;
+    align-items: center;
 }
-
+.drop-down-menu-arrow {
+    width: 20px;
+}
+.right-arrow {
+    transform: rotate(270deg);
+}
+.left-arrow {
+    transform: rotate(90deg);
+}
