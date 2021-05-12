@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Niconne&family=Open+Sans:wght@300&display=swap");
+body {
+  margin: 0;
+}
+
 html {
   font-family: 'Open Sans', sans-serif;
 }
@@ -8,5 +12,14 @@ html {
   font-weight: normal;
   font-size: 2rem;
   font-family: 'Niconne', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.site-header {
+  background-color: #8C5B97;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
