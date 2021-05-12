@@ -3,13 +3,24 @@
     color: $primary-text;
 }
 
-//top menu
+//menu closed (defualt styles)
 .top-menu {
     display: flex;
     justify-content: space-between;
 }
-.bottom-menu {
+.menu-parent .bottom-menu {
     display: none;
+}
+//menu opened
+.menu-parent.menu-opened  .close-button {
+    display: block;
+
+}
+.menu-parent.menu-opened  .open-menu-button {
+    display: none;
+}
+.menu-parent.menu-opened  .bottom-menu {
+    display: block;
 }
 
 //dropdown buttons

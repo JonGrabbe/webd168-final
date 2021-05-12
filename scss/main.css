@@ -38,8 +38,20 @@ h1, h2, h3, h4, h5, h6 {
           justify-content: space-between;
 }
 
-.bottom-menu {
+.menu-parent .bottom-menu {
   display: none;
+}
+
+.menu-parent.menu-opened .close-button {
+  display: block;
+}
+
+.menu-parent.menu-opened .open-menu-button {
+  display: none;
+}
+
+.menu-parent.menu-opened .bottom-menu {
+  display: block;
 }
 
 .site-header button {
