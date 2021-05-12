@@ -4,6 +4,12 @@ body {
   margin: 0;
 }
 
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 html {
   font-family: 'Open Sans', sans-serif;
 }
@@ -21,5 +27,27 @@ h1, h2, h3, h4, h5, h6 {
 .site-header {
   background-color: #8C5B97;
   color: white;
+}
+
+.site-header button {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.menu-parent .close-button {
+  display: none;
+}
+
+.close-button img {
+  width: 30px;
+}
+
+.open-menu-button img {
+  width: 30px;
+}
+
+.drop-down-menu-arrow {
+  width: 30px;
 }
 /*# sourceMappingURL=main.css.map */
