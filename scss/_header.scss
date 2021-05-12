@@ -2,6 +2,16 @@
     background-color: $primary;
     color: $primary-text;
 }
+
+//top menu
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-menu {
+    display: none;
+}
+
 //dropdown buttons
 .site-header button {
     padding: 0;
