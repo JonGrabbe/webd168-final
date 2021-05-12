@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 .site-header {
   background-color: #8C5B97;
   color: white;
+  position: relative;
 }
 
 .top-menu {
@@ -71,6 +72,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu-button img {
   width: 30px;
+}
+
+.find-a-pet-submenu {
+  display: none;
+}
+
+.find-a-pet-submenu-open .find-a-pet-submenu {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #BE69A4;
+  width: 90%;
+  height: 100%;
 }
 
 .drop-down-menu-arrow {

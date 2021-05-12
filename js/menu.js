@@ -11,4 +11,17 @@ document.getElementById('menu-button').addEventListener('click', function(e) {
     } else {
         e.currentTarget.innerHTML = openMenu;
     }
-})
+});
+
+let petSubMenus = document.getElementsByClassName('find-a-pet-submenu-button').length;
+console.log(petSubMenus);
+for(let i=0; i<petSubMenus; i++) {
+    console.log('sdfsdfsd')
+    document.getElementsByClassName('find-a-pet-submenu-button')[i].addEventListener('click', function() {
+        document.getElementById('menu').classList.toggle('find-a-pet-submenu-open');
+        console.log('sdfsdfd')    
+    })
+}
+// document.getElementById('find-a-pet-submenu-button').addEventListener('click', function() {
+//     document.getElementById('menu').classList.toggle('find-a-pet-submenu-open');
+// })

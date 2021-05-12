@@ -1,6 +1,7 @@
 .site-header {
     background-color: $primary;
     color: $primary-text;
+    position: relative;
 }
 
 //menu closed (defualt styles)
@@ -34,4 +35,21 @@
 }
 .menu-button img {
     width: 30px;
+}
+
+
+//find a pet submenu
+.find-a-pet-submenu {
+    display: none;
+}
+.find-a-pet-submenu-open {
+    .find-a-pet-submenu {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: $primary-light;
+        width: 90%;
+        height: 100%;
+    }
 }
