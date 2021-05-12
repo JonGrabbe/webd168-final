@@ -10,6 +10,15 @@ ul, li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+* {
+  color: inherit;
+  font-family: inherit;
+}
+
 html {
   font-family: 'Open Sans', sans-serif;
 }

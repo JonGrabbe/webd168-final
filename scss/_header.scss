@@ -8,19 +8,22 @@
     display: flex;
     justify-content: space-between;
 }
-.menu-parent .bottom-menu {
-    display: none;
+.menu-parent {
+    .bottom-menu {
+        display: none;
+    }
 }
 //menu opened
-.menu-parent.menu-opened  .close-button {
-    display: block;
-
-}
-.menu-parent.menu-opened  .open-menu-button {
-    display: none;
-}
-.menu-parent.menu-opened  .bottom-menu {
-    display: block;
+.menu-parent.menu-opened {
+        .close-button {
+            display: block;        
+        }
+        .open-menu-button {
+            display: none;
+        }
+        .bottom-menu {
+            display: block;
+        }
 }
 
 //dropdown buttons
