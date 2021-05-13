@@ -50,23 +50,23 @@
     visibility: hidden;
     position: absolute;
     left: 100%;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    background-color: $primary-light;
+    box-sizing: border-box;
+    padding: 25px;
     transition: left .3s linear;
+    .left-arrow {
+        width: 20px;
+        position: relative;
+        left: -7px;
+    }
 }
 .find-a-pet-submenu-open {
     .find-a-pet-submenu {
         visibility: visible;
         left: 10%;
-        top: 0;
-        background-color: $primary-light;
-        width: 90%;
-        height: 100%;
-        padding: 25px;
-        box-sizing: border-box;
-        .left-arrow {
-            width: 20px;
-            position: relative;
-            left: -7px;
-        }
     }
 }
 
