@@ -3,6 +3,7 @@
 @import 'fonts';
 @import 'header';
 
+
 body {
     overflow: hidden;
 }
@@ -33,7 +34,6 @@ body {
 }
 
 
-
 /* links bottom border animation */
 .bdr-slide {
     position: relative;
@@ -49,8 +49,8 @@ body {
     visibility: hidden;
     transition: all .3s;
 }
-.bdr-slide:hover.bdr-slide::after,
-.bdr-slide:focus.bdr-slide::after {
+.bdr-slide:hover::after,
+.bdr-slide:focus::after {
     visibility: visible;
     width: 105%;
 }
