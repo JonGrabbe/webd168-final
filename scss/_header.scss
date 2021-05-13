@@ -2,8 +2,7 @@
     background-color: $primary;
     color: $primary-text;
     position: relative;
-}
-.site-header {
+    overflow: hidden;
     li {
         margin: 25px 0;
     }
@@ -46,8 +45,18 @@
 
 
 //find a pet submenu
+@keyframes menu-slide-left {
+    0% {
+        display: block;
+        left: 100%;
+    }
+    100% {
+        left: 10%;
+    }
+}
 .find-a-pet-submenu {
-    visibility: hidden;
+    // visibility: hidden;
+    display: none;
     position: absolute;
     left: 100%;
     width: 90%;
@@ -65,8 +74,10 @@
 }
 .find-a-pet-submenu-open {
     .find-a-pet-submenu {
-        visibility: visible;
+        // visibility: visible;
+        display: block;
         left: 10%;
+        animation: menu-slide-left .3s linear;
     }
 }
 
