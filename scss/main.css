@@ -47,8 +47,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -84,6 +88,47 @@ body {
 
 .menu-button-icon {
   width: 30px;
+}
+
+/* back to top btn */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border: 3px solid #60B0BA;
+}
+
+.back-to-top-btn:hover {
+  background-color: #60B0BA;
+}
+
+.back-to-top-btn:hover svg {
+  fill: white;
+}
+
+.back-to-top-btn svg {
+  width: 50%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  fill: #60B0BA;
 }
 
 .site-header {
