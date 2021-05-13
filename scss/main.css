@@ -47,6 +47,10 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+.site-header li {
+  margin: 1rem 0;
+}
+
 .nav-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,6 +58,40 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header.menu-closed .expand-menu-item {
+  display: none;
+}
+
+.find-a-pet-submenu {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  height: 100vh;
+  width: 90%;
+  background-color: #BE69A4;
+}
+
+#find-a-pet-dropdown .find-a-pet-submenu {
+  display: none;
+}
+
+#find-a-pet-dropdown.menu-opened .find-a-pet-submenu {
+  display: block;
+}
+
+.wrapper {
+  padding: 16px;
+}
+
+.arrow-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

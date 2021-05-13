@@ -3,6 +3,13 @@
 @import 'fonts';
 @import 'header';
 
+.wrapper {
+    padding: 16px;
+}
+.arrow-button-container {
+    display: flex;
+    align-items: center;
+}
 .arrow {
     width: 20px;
     &-right {
