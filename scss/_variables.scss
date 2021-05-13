@@ -5,3 +5,14 @@ $primary-text: white;
 $primary-light: #BE69A4;
 $secondary: #60B0BA;
 $background-color: #EEEEF5;
+
+@mixin desktop {
+    @media(min-width: 1000px) {
+        @content;
+    }
+}
+@mixin tablet($width: 870px) {
+    @media(min-width: $width) {
+        @content;
+    }
+}

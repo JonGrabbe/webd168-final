@@ -24,3 +24,9 @@
 .left-arrow {
     transform: rotate(90deg);
 }
+
+@include desktop {
+    .hide-on-desktop {
+        display: none;
+    }
+}

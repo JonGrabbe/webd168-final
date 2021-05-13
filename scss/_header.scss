@@ -82,3 +82,14 @@
 }
 
 
+
+@include tablet {
+    .hide-on-desktop {
+        display: none;
+    }
+    .menu-parent {
+        .bottom-menu {
+            display: block;
+        }
+    }
+}
