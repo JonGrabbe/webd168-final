@@ -90,6 +90,18 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+@media (min-width: 870px) {
+  .site-header.menu-closed .expand-menu-item {
+    display: block;
+  }
+  .controls {
+    display: none;
+  }
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logo dropdown" "links links";
+}
+
 .wrapper {
   padding: 16px;
 }

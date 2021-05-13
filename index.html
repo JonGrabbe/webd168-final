@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <header id="menu" class="site-header">
-        <nav class="wrapper">
+    <header id="menu" class="site-header menu-closed">
+        <div class="wrapper">
             <div class="nav-top">
                 <h1 class="logo">
                     <a href="#">The Pet Place</a>
@@ -22,31 +22,35 @@
                     </button>
                 </div>
             </div>
-            <ul id="find-a-pet-dropdown" class="find-a-pet-dropdown expand-menu-item">
-                <button id="find-a-pet-dropdown-button" class="arrow-button-container">Find a pet <img class="arrow-right" src="images/arrow-down.svg"
-                        alt=""></button>
+            <div id="find-a-pet-dropdown" class="find-a-pet-dropdown expand-menu-item">
+                <button id="find-a-pet-dropdown-button" class="arrow-button-container">Find a pet <img
+                        class="arrow-right" src="images/arrow-down.svg" alt=""></button>
                 <div class="find-a-pet-submenu">
                     <button id="find-a-pet-submenu-close-button">
                         <img src="images/arrow-down.svg" alt="" class="arrow-left">
                     </button>
 
                     <ul>
-                        <li><a href="#">Dogs</a></li>
-                        <li><a href="#">Cats</a></li>
-                        <li><a href="#">Horses</a></li>
-                        <li><a href="#">Barnyard</a></li>
+                        <nav>
+                            <li><a href="#">Dogs</a></li>
+                            <li><a href="#">Cats</a></li>
+                            <li><a href="#">Horses</a></li>
+                            <li><a href="#">Barnyard</a></li>
+                        </nav>
                     </ul>
                 </div>
-            </ul>
+            </div>
             <ul class="bottom-menu expand-menu-item">
-                <li><a href="#">Adopt</a></li>
-                <li><a href="#">Rehome a pet</a></li>
-                <li><a href="#">Volunteer</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Donate</a></li>
+                <nav>
+                    <li><a href="#">Adopt</a></li>
+                    <li><a href="#">Rehome a pet</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Donate</a></li>
+                </nav>
             </ul>
 
-        </nav>
+        </div>
     </header>
 
     <footer>

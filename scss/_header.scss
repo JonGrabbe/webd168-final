@@ -44,3 +44,23 @@
         display: block;
     }
 }
+
+
+@include tablet {
+    .site-header.menu-closed {
+        .expand-menu-item {
+            display: block;
+        }
+    }
+    .controls {
+        display: none;
+    }
+    //grid display
+    .site-header {
+        
+    }
+    display: grid;
+    grid-template-areas:
+        "logo dropdown"
+        "links links"
+}
