@@ -37,6 +37,24 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.site-header {
+  background-color: #8C5B97;
+  color: white;
+}
+
+.site-header button {
+  border: 0;
+  padding: 0;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.find-a-pet-dropdown .arrow-link img {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
 .main-wrapper {
   max-width: 1500px;
   padding: 25px;
@@ -54,9 +72,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .arrow-link img {
   margin-left: 5px;
-}
-
-.drop-down-menu-arrow {
   width: 15px;
 }
 
