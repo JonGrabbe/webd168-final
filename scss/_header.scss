@@ -2,7 +2,11 @@
     background-color: $primary;
     color: $primary-text;
     position: relative;
-    padding: 25px;
+}
+.site-header {
+    li {
+        margin: 25px 0;
+    }
 }
 .bottom-menu {
     height: 80vh;
@@ -43,24 +47,27 @@
 
 //find a pet submenu
 .find-a-pet-submenu {
-    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: 100%;
+    transition: left .3s linear;
 }
 .find-a-pet-submenu-open {
     .find-a-pet-submenu {
-        display: block;
-        position: absolute;
-        right: 0;
+        visibility: visible;
+        left: 10%;
         top: 0;
         background-color: $primary-light;
         width: 90%;
         height: 100%;
+        padding: 25px;
+        box-sizing: border-box;
+        .left-arrow {
+            width: 20px;
+            position: relative;
+            left: -7px;
+        }
     }
 }
 
 
-.site-header {
-    li {
-        margin: 25px;
-
-    }
-}
