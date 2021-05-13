@@ -3,6 +3,9 @@
 @import 'fonts';
 @import 'header';
 
+body {
+    overflow: hidden;
+}
 .wrapper {
     padding: 16px;
 }

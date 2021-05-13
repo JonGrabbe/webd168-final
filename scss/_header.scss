@@ -57,10 +57,42 @@
     }
     //grid display
     .site-header {
-        
+        display: grid;
+        grid-template-areas:
+            "logo dropdown"
+            "links links";
+        align-items: start;
     }
-    display: grid;
-    grid-template-areas:
-        "logo dropdown"
-        "links links"
+    .nav-top {
+        grid-area: logo;
+    }
+    #find-a-pet-dropdown {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-area: dropdown;
+        justify-self: end;
+        #find-a-pet-dropdown-button {
+            justify-self: end;
+        }
+    }
+    .find-a-pet-submenu {
+        display: flex;
+        position: static;
+        width: initial;
+        height: initial;
+        background-color: inherit;
+        padding: 0;
+        button {
+            display: none;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    .bottom-menu ul {
+        grid-area: links;
+        display: flex;
+    }
 }
