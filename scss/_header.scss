@@ -62,6 +62,12 @@
             "logo dropdown"
             "links links";
         align-items: start;
+        li {
+            margin-right: 1rem;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
     .nav-top {
         grid-area: logo;
@@ -74,6 +80,19 @@
         justify-self: end;
         #find-a-pet-dropdown-button {
             justify-self: end;
+        }
+        .arrow-button-container {
+            img {
+                transition: transform .3s linear;
+                @include arrowDown;
+            }
+        }
+        &.menu-opened {
+            .arrow-button-container {
+                img {
+                    @include arrowUp;
+                }
+            }
         }
     }
     .find-a-pet-submenu {

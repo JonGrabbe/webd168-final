@@ -6,12 +6,21 @@ $primary-light: #BE69A4;
 $secondary: #60B0BA;
 $background-color: #EEEEF5;
 
+//rotates button arrow up
+@mixin arrowUp {
+    transform: rotate(180deg);
+}
+@mixin arrowDown {
+    transform: rotate(0deg);
+}
+
+
 @mixin desktop {
     @media(min-width: 1000px) {
         @content;
     }
 }
-@mixin tablet($width: 870px) {
+@mixin tablet($width: 700px) {
     @media(min-width: $width) {
         @content;
     }
