@@ -28,6 +28,10 @@ button {
   padding: 0;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 html {
   font-family: 'Open Sans', sans-serif;
 }
@@ -213,5 +217,29 @@ body {
 
 .menu-button-icon {
   width: 30px;
+}
+
+/* links bottom border animation */
+.bdr-slide {
+  position: relative;
+}
+
+.bdr-slide::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #60B0BA;
+  visibility: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.bdr-slide:hover.bdr-slide::after,
+.bdr-slide:focus.bdr-slide::after {
+  visibility: visible;
+  width: 105%;
 }
 /*# sourceMappingURL=main.css.map */

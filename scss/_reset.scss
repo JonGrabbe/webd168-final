@@ -20,4 +20,7 @@ button {
     font-family: inherit;
     font-weight: inherit;
     padding: 0;
+    &:hover {
+        cursor: pointer;
+    }
 }
