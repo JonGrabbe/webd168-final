@@ -1,0 +1,28 @@
+body {
+    overflow: hidden;
+}
+.wrapper {
+    padding: 16px;
+}
+.arrow-button-container {
+    display: flex;
+    align-items: center;
+    img {
+        margin-left: .5rem;
+    }
+}
+.arrow {
+    width: 15px;
+    &-right {
+        @extend .arrow;
+        transform: rotate(270deg);
+    }
+    &-left {
+        // width: 20px;
+        @extend .arrow;
+        transform: rotate(90deg);
+    }
+}
+.menu-button-icon {
+    width: 30px;
+}
