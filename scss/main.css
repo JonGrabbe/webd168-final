@@ -20,7 +20,12 @@ a {
 }
 
 button {
+  background: none;
+  border: 0;
   font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  padding: 0;
 }
 
 html {
@@ -42,56 +47,35 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-.site-header button {
-  border: 0;
-  padding: 0;
-  background: none;
-  font-family: inherit;
-  font-size: inherit;
-}
-
-.menu-button img {
-  width: 30px;
-}
-
-.find-a-pet-dropdown .arrow-link img {
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-}
-
-.main-wrapper {
-  max-width: 1500px;
-  padding: 25px;
-  margin: 0 auto;
-}
-
-.arrow-link {
+.nav-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.arrow-link img {
-  margin-left: 5px;
-  width: 15px;
+.arrow {
+  width: 20px;
 }
 
-.right-arrow {
+.arrow-right {
+  width: 20px;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
 }
 
-.left-arrow {
+.arrow-left {
+  width: 20px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-@media (min-width: 1000px) {
-  .hide-on-desktop {
-    display: none;
-  }
+.menu-button-icon {
+  width: 30px;
 }
 /*# sourceMappingURL=main.css.map */

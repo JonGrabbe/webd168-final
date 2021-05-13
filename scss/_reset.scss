@@ -6,9 +6,6 @@ ul,li {
     padding: 0;
     list-style-type: none;
 }
-li {
-    // display: inline-block;
-}
 a {
     text-decoration: none;
 }
@@ -17,5 +14,10 @@ a {
     font-family: inherit;
 }
 button {
+    background: none;
+    border: 0;
     font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    padding: 0;
 }
