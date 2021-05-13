@@ -22,8 +22,6 @@ function openFindPetSubMenu() {
     toggleClass('find-a-pet-dropdown', 'menu-opened');
 }
 
-addEventToId('find-a-pet-dropdown-button', function() {
-    openFindPetSubMenu()
-})
+addEventToId('find-a-pet-dropdown-button', openFindPetSubMenu);
 
 addEventToId('find-a-pet-submenu-close-button', openFindPetSubMenu);

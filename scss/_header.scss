@@ -1,6 +1,7 @@
 .site-header {
     background-color: $primary;
     color: $primary-text;
+    height: 90vh;
     li {
         margin: 1rem 0;
     }
@@ -14,6 +15,7 @@
 
 //menu closed
 .site-header.menu-closed {
+    height: initial;
     .expand-menu-item {
         display: none;
     }
@@ -30,6 +32,7 @@
     height: 100vh;
     width: 90%;
     background-color: $primary-light;
+    padding: 20px 16px;
 }
 #find-a-pet-dropdown {
     .find-a-pet-submenu {
