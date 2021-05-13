@@ -1,3 +1,4 @@
+/* links bottom border animation */
 @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Niconne&family=Open+Sans:wght@300&display=swap");
 body {
@@ -77,6 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .find-a-pet-submenu {
+  z-index: 100;
   position: absolute;
   top: 0;
   left: 10%;
@@ -114,6 +116,25 @@ h1, h2, h3, h4, h5, h6 {
   }
   .site-header li:last-child {
     margin-right: 0;
+  }
+  .site-header nav a {
+    position: relative;
+  }
+  .site-header nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: #60B0BA;
+    visibility: hidden;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .site-header nav a:hover::after, .site-header nav a:focus::after {
+    visibility: visible;
+    width: 105%;
   }
   .nav-top {
     -ms-grid-row: 1;
@@ -217,29 +238,5 @@ body {
 
 .menu-button-icon {
   width: 30px;
-}
-
-/* links bottom border animation */
-.bdr-slide {
-  position: relative;
-}
-
-.bdr-slide::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 3px;
-  bottom: -5px;
-  left: 0;
-  background-color: #60B0BA;
-  visibility: hidden;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.bdr-slide:hover::after,
-.bdr-slide:focus::after {
-  visibility: visible;
-  width: 105%;
 }
 /*# sourceMappingURL=main.css.map */

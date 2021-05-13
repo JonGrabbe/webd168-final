@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'reset';
 @import 'fonts';
+@import 'global';
 @import 'header';
 
 
@@ -34,23 +35,5 @@ body {
 }
 
 
-/* links bottom border animation */
-.bdr-slide {
-    position: relative;
-}
-.bdr-slide::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    bottom: -5px;
-    left: 0;
-    background-color: $secondary;
-    visibility: hidden;
-    transition: all .3s;
-}
-.bdr-slide:hover::after,
-.bdr-slide:focus::after {
-    visibility: visible;
-    width: 105%;
-}
+
+

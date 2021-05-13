@@ -25,3 +25,25 @@ $background-color: #EEEEF5;
         @content;
     }
 }
+
+/* links bottom border animation */
+@mixin slideLinkHover {
+    & {
+        position: relative;
+    }
+    &::after {
+        content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: $secondary;
+    visibility: hidden;
+    transition: all .3s;
+    }
+    &:hover::after,&:focus::after {
+        visibility: visible;
+        width: 105%;
+    }
+}

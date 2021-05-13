@@ -26,6 +26,7 @@
 
 //find a pet slider menu
 .find-a-pet-submenu {
+    z-index: 100;
     position: absolute;
     top: 0;
     left: 10%;
@@ -67,6 +68,9 @@
             &:last-child {
                 margin-right: 0;
             }
+        }
+        nav a {
+            @include slideLinkHover;
         }
     }
     .nav-top {
