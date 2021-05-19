@@ -271,10 +271,6 @@ body {
   background-color: #555;
 }
 
-.active:after {
-  content: "\2212";
-}
-
 .content {
   padding: 0 18px;
   max-height: 0;
@@ -293,9 +289,5 @@ body {
 
 .collapsible:focus {
   background-color: black;
-}
-
-.no-classlist .content {
-  /* max-height: none; */
 }
 /*# sourceMappingURL=main.css.map */
