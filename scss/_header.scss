@@ -1,121 +1,138 @@
+//fallback for browsers that dont support CSS grid
 .site-header {
     background-color: $primary;
     color: $primary-text;
-    height: 90vh;
-    li {
-        margin: 1rem 0;
-    }
-}
-.nav-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-//menu closed
-.site-header.menu-closed {
     height: initial;
-    .expand-menu-item {
+    li {
+        margin: 1rem;
+    }
+    button {
         display: none;
     }
 }
 
-//menu opened
 
-
-//find a pet slider menu
-.find-a-pet-submenu {
-    z-index: 100;
-    position: absolute;
-    top: 0;
-    left: 10%;
-    height: 100vh;
-    width: 90%;
-    background-color: $primary-light;
-    padding: 20px 16px;
-}
-#find-a-pet-dropdown {
-    .find-a-pet-submenu {
-        display: none;
-    }
-}
-#find-a-pet-dropdown.menu-opened {
-    .find-a-pet-submenu {
-        display: block;
-    }
-}
-
-
-@include tablet {
-    .site-header.menu-closed {
-        .expand-menu-item {
-            display: block;
-        }
-    }
-    .controls {
-        display: none;
-    }
-    //grid display
+//moder css
+@supports(display: grid) {
     .site-header {
-        display: grid;
-        grid-template-areas:
-            "logo dropdown"
-            "links links";
-        align-items: start;
+        background-color: $primary;
+        color: $primary-text;
+        height: 90vh;
         li {
-            margin-right: 1rem;
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-        nav a {
-            @include slideLinkHover;
+            margin: 1rem 0;
         }
     }
     .nav-top {
-        grid-area: logo;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    //menu closed
+    .site-header.menu-closed {
+        height: initial;
+        .expand-menu-item {
+            display: none;
+        }
+    }
+    
+    //menu opened
+    
+    
+    //find a pet slider menu
+    .find-a-pet-submenu {
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        height: 100vh;
+        width: 90%;
+        background-color: $primary-light;
+        padding: 20px 16px;
     }
     #find-a-pet-dropdown {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-area: dropdown;
-        justify-self: end;
-        #find-a-pet-dropdown-button {
-            justify-self: end;
+        .find-a-pet-submenu {
+            display: none;
         }
-        .arrow-button-container {
-            img {
-                transition: transform .3s linear;
-                @include arrowDown;
+    }
+    #find-a-pet-dropdown.menu-opened {
+        .find-a-pet-submenu {
+            display: block;
+        }
+    }
+    
+    
+    @include tablet {
+        .site-header.menu-closed {
+            .expand-menu-item {
+                display: block;
             }
         }
-        &.menu-opened {
+        .controls {
+            display: none;
+        }
+        //grid display
+        .site-header {
+            display: grid;
+            grid-template-areas:
+                "logo dropdown"
+                "links links";
+            align-items: start;
+            li {
+                margin-right: 1rem;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            nav a {
+                @include slideLinkHover;
+            }
+        }
+        .nav-top {
+            grid-area: logo;
+        }
+        #find-a-pet-dropdown {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr;
+            grid-area: dropdown;
+            justify-self: end;
+            #find-a-pet-dropdown-button {
+                justify-self: end;
+            }
             .arrow-button-container {
                 img {
-                    @include arrowUp;
+                    transition: transform .3s linear;
+                    @include arrowDown;
+                }
+            }
+            &.menu-opened {
+                .arrow-button-container {
+                    img {
+                        @include arrowUp;
+                    }
                 }
             }
         }
-    }
-    .find-a-pet-submenu {
-        display: flex;
-        position: static;
-        width: initial;
-        height: initial;
-        background-color: inherit;
-        padding: 0;
-        button {
-            display: none;
-        }
-        nav {
+        .find-a-pet-submenu {
             display: flex;
-            justify-content: flex-end;
+            position: static;
+            width: initial;
+            height: initial;
+            background-color: inherit;
+            padding: 0;
+            button {
+                display: none;
+            }
+            nav {
+                display: flex;
+                justify-content: flex-end;
+            }
         }
-    }
-    .bottom-menu ul {
-        grid-area: links;
-        display: flex;
+        .bottom-menu ul {
+            grid-area: links;
+            display: flex;
+        }
     }
 }
