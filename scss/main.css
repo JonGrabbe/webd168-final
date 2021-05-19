@@ -242,13 +242,19 @@ body {
   cursor: pointer;
   padding: 18px;
   width: 100%;
+  box-sizing: border-box;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.collapsible h3, .collapsible h4 {
+  font-size: inherit;
+  font-weight: normal;
 }
 
 .collapsible img {
