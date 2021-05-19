@@ -248,12 +248,13 @@ body {
   font-size: 15px;
 }
 
-.active, .collapsible:hover {
+.active,
+.collapsible:hover {
   background-color: #555;
 }
 
 .collapsible:after {
-  content: '\002B';
+  content: "\002B";
   color: white;
   font-weight: bold;
   float: right;
@@ -270,6 +271,14 @@ body {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+}
+
+.content ul {
+  padding-left: 25px;
+}
+
+.content ul li {
+  list-style-type: disc;
 }
 
 .collapsible:focus {
