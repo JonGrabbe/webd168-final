@@ -11,7 +11,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  img {
+    transition: transform .3s linear;
+    @include arrowDown;
+  }
+  &.menu-open {
+    img {
+      @include arrowUp;
+    }
+  }
 }
+
 
 .active,
 .collapsible:hover {
