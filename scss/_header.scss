@@ -12,9 +12,17 @@
 }
 
 
-//moder css
+//modern CSS
 @supports(display: grid) {
     .site-header {
+        //reset to nullify fallback
+        li {
+            margin: initial;
+        }
+        button {
+            display: inline-block;
+        }
+
         background-color: $primary;
         color: $primary-text;
         height: 90vh;

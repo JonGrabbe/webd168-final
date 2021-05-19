@@ -163,6 +163,12 @@ body {
     height: 90vh;
   }
   .site-header li {
+    margin: initial;
+  }
+  .site-header button {
+    display: inline-block;
+  }
+  .site-header li {
     margin: 1rem 0;
   }
   .nav-top {
