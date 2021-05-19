@@ -89,11 +89,11 @@ body {
 /* back to top btn */
 .back-to-top-btn {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 20px;
+  right: 10px;
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: white;
   padding: 5px;
   box-sizing: border-box;
@@ -252,6 +252,10 @@ body {
     grid-area: links;
     display: flex;
   }
+}
+
+.dropdown-menu-container {
+  background-color: #F6F6F6;
 }
 
 .collapsible {
