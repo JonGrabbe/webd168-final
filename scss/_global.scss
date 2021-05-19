@@ -58,3 +58,19 @@ body {
     transform: rotate(-90deg);
     fill: $secondary;
 }
+
+
+
+//MAIN
+.main-content-wrapper {
+    @include desktop {
+        max-width: 1500px; //ie 9 - 6
+        max-width: 94em; //1500px
+        max-width: 94rem; //1500px
+        margin: 0 auto;
+    }
+    @include tablet {
+        width: 95%;
+        margin: 0 auto;
+    }
+}

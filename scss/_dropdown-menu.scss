@@ -1,3 +1,7 @@
+.dropdown-menu-container {
+
+}
+
 .collapsible {
   background-color: grey;
   color: white;
@@ -12,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid black;
   h3, h4 {
     font-size: inherit;
     font-weight: normal;
@@ -39,7 +44,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  // background-color: #f1f1f1;
   ul {
     padding-left: 25px;
     li {
@@ -50,3 +55,4 @@
 .collapsible:focus {
   background-color: black;
 }
+

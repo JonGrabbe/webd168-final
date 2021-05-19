@@ -1,0 +1,10 @@
+.site-footer {
+    padding: 32px;
+    padding: 2em;
+    padding: 2rem; //32px
+    background-color: $primary;
+    color: $primary-text;
+    a {
+        text-decoration: underline;
+    }
+}
