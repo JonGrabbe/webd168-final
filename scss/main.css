@@ -163,11 +163,21 @@ body {
 }
 
 .site-banner-container {
+  height: 40vh;
+  background-image: url("../../images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.site-banner-container p {
+  color: white;
+  z-index: 100;
 }
 
 .site-banner-container img {

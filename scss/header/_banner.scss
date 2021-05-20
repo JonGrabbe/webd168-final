@@ -14,6 +14,16 @@
     }
 }
 .site-banner-container {
+    height: 40vh;
+    background-image: url('../../images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    p {
+        //banner text
+        color: white;
+        z-index: 100;
+    }
     //center text
     text-align: center;
     display: flex;
