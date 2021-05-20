@@ -331,6 +331,51 @@ body {
   background-color: black;
 }
 
+.pet-card {
+  display: inline-block;
+  background-color: #8C5B97;
+  perspective: 6000px;
+}
+
+.flip-wrapper {
+  width: 300px;
+  height: 400px;
+  border: 3px solid red;
+  position: relative;
+  transition: all .3s linear;
+  transform-style: preserve-3d;
+}
+
+.flip-wrapper:hover {
+  transform: rotateY(180deg);
+  transform-origin: center;
+}
+
+.bgc {
+  display: inline-block;
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+}
+
+.flip-a {
+  backface-visibility: hidden;
+}
+
+.flip-b {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* z-index: -1; */
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+  background-color: purple;
+}
+
 .site-footer {
   padding: 32px;
   padding: 2em;
