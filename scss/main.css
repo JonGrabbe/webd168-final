@@ -335,6 +335,16 @@ body {
   display: inline-block;
   background-color: #8C5B97;
   perspective: 6000px;
+  background-color: white;
+}
+
+.pet-card:hover .flip-wrapper {
+  transform: rotateY(180deg);
+  transform-origin: center;
+}
+
+.pet-card .title {
+  background-color: #8C5B97;
 }
 
 .flip-wrapper {
@@ -343,11 +353,6 @@ body {
   position: relative;
   transition: all .3s linear;
   transform-style: preserve-3d;
-}
-
-.flip-wrapper:hover {
-  transform: rotateY(180deg);
-  transform-origin: center;
 }
 
 .bgc {
@@ -378,7 +383,8 @@ body {
   /* z-index: -1; */
   transform: rotateY(-180deg);
   backface-visibility: hidden;
-  background-color: black;
+  background-color: #8C5B97;
+  color: white;
 }
 
 .site-footer {

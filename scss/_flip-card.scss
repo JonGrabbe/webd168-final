@@ -2,7 +2,13 @@
     display: inline-block;
     background-color: $primary;
     perspective: 6000px;
+    background-color: white;
+    &:hover .flip-wrapper {
+        transform: rotateY(180deg);
+        transform-origin: center;
+    }
     .title {
+        background-color: $primary;
     }
 }
 .flip-wrapper {
@@ -11,10 +17,6 @@
     position: relative;
     transition: all .3s linear;
     transform-style: preserve-3d;
-}
-.flip-wrapper:hover {
-    transform: rotateY(180deg);
-    transform-origin: center;
 }
 .bgc {
     display: inline-block;
@@ -33,6 +35,7 @@
     background-size: cover;
 }
 .flip-b {
+    // pet info div
     position: absolute;
     left: 0;
     right: 0;
@@ -41,5 +44,6 @@
     /* z-index: -1; */
     transform: rotateY(-180deg);
     backface-visibility: hidden;
-    background-color: black;
+    background-color: $primary;
+    color: white;
 }
