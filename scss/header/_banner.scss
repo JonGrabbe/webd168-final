@@ -13,7 +13,7 @@
         opacity: .5;
     }
 }
-.site-banner-container {
+@mixin bannerMix {
     height: 40vh;
     background-image: url('../../images/banner.jpg');
     background-size: cover;
@@ -33,4 +33,10 @@
         width: 100%;
     }
     @include darkOverlay;
+}
+
+@media(min-width: 1000px) {
+    .site-banner-container {
+        @include bannerMix;
+    }
 }
