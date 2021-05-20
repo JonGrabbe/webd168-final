@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* links bottom border animation */
 @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Niconne&family=Open+Sans:wght@300&display=swap");
@@ -37,20 +38,29 @@ button:hover {
   cursor: pointer;
 }
 
-html {
-  font-family: 'Open Sans', sans-serif;
+/**
+ * Vertical rhythm by Syncope
+ * http://nowodzinski.pl/syncope
+ */
+html, body {
   font-size: 16px;
   line-height: 1.5;
 }
 
-.logo {
+h1, h2, h3, h4 {
   font-weight: normal;
-  font-size: 2rem;
-  font-family: 'Niconne', cursive;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+/**
+ * Sets vertical–rhythm for the given level.
+ * Usage:
+ *
+ * 	h1 {
+ * 		@include v-rhythm( 4 );
+ * 	}
+ */
+html {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .slide-button-ani {
@@ -217,6 +227,13 @@ body {
 
 .site-header button {
   display: none;
+}
+
+.logo {
+  font-weight: normal;
+  font-size: 2rem;
+  font-family: 'Niconne', cursive;
+  margin: 0;
 }
 
 @supports (display: grid) {
