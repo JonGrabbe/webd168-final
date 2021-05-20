@@ -6,6 +6,8 @@ $primary-light: #BE69A4;
 $secondary: #60B0BA;
 $background-color: #F6F6F6;
 
+$defaultContentPadding: 0 1rem;
+
 //rotates button arrow up
 @mixin arrowUp {
     transform: rotate(180deg);

@@ -14,7 +14,7 @@
     }
 }
 @mixin bannerMix {
-    height: 30vh;
+    height: 40vh;
     background-image: url('../../images/banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,12 +35,14 @@
     @include darkOverlay;
 }
 
+
 .site-banner-container {
     .text {
+        padding: $defaultContentPadding;
         text-align: center;
     }
 }
-@media(min-width: 750px) {
+@media(min-width: 1000px) {
     .site-banner-container {
         @include bannerMix;
     }
