@@ -138,8 +138,11 @@ body {
   fill: #60B0BA;
 }
 
-.main-content-wrapper {
+.about {
   padding: 0 1rem;
+}
+
+.main-content-wrapper {
   box-sizing: border-box;
 }
 
@@ -156,32 +159,6 @@ body {
   .main-content-wrapper {
     width: 95%;
     margin: 0 auto;
-  }
-}
-
-.container-4 .row {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-
-.container-4 .row .col {
-  width: 100%;
-}
-
-.container-4 .row .col-4 {
-  max-width: 24%;
-}
-
-@media (min-width: 700px) {
-  .container-4 .row {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1000px) {
-  .container-4 .row {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -397,7 +374,6 @@ body {
   background-color: #8C5B97;
   perspective: 6000px;
   background-color: white;
-  max-width: 300px;
 }
 
 .pet-card:hover .flip-wrapper, .pet-card:focus .flip-wrapper, .pet-card:focus-within .flip-wrapper {
@@ -427,17 +403,11 @@ body {
 }
 
 .flip-wrapper {
-  width: 280px;
+  width: 300px;
   height: 400px;
   position: relative;
   transition: all .3s linear;
   transform-style: preserve-3d;
-}
-
-@media (min-width: 700px) {
-  .flip-wrapper {
-    width: 300px;
-  }
 }
 
 .bgc {
@@ -475,6 +445,37 @@ body {
 
 .flip-b ul li {
   margin: 16px;
+}
+
+.pet-cards-container h2 {
+  text-align: center;
+}
+
+.pet-cards-container .row {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: auto;
+}
+
+.pet-cards-container .row .flip-wrapper {
+  width: 280px;
+}
+
+@media (min-width: 720px) {
+  .pet-cards-container .row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pet-cards-container .row {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1190px;
+    grid-gap: 0;
+  }
 }
 
 .site-footer {

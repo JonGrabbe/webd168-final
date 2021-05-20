@@ -64,10 +64,9 @@ body {
 
 //MAIN
 .about {
-    // padding: 0 1rem;
+    padding: 0 1rem;
 }
 .main-content-wrapper {
-    padding: 0 1rem;
     box-sizing: border-box;
     @include desktop {
         max-width: 1500px; //ie 9 - 6
