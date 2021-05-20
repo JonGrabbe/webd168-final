@@ -1,0 +1,19 @@
+//button hover slide animation
+.slide-button-ani {
+    position: relative;
+}
+.slide-button-ani::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0%;
+    background-color: $secondary;
+    transition: all .2s linear;
+}
+.slide-button-ani:hover {
+    &::after {
+        width: 100%;
+    }
+}
