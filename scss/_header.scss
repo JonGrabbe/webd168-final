@@ -9,6 +9,7 @@
     button {
         display: none;
     }
+   
 }
 
 
@@ -43,6 +44,9 @@
             background-color: black;
             opacity: .5;
         }
+        @include tablet {
+            height: initial;
+        }
     }
     .nav-top {
         display: flex;
@@ -75,7 +79,6 @@
         padding-top: 28px;
         padding-left: 20px;
         box-sizing: border-box;
-        transition: all .5s ease-in;
     }
     #find-a-pet-dropdown {
         .find-a-pet-submenu {
@@ -87,6 +90,9 @@
         .find-a-pet-submenu {
             display: block;
             width: 90%;
+            @include tablet {
+                width: initial;
+            }
         }
     }
     
@@ -153,7 +159,7 @@
             button {
                 display: none;
             }
-            nav {
+            ul {
                 display: flex;
                 justify-content: flex-end;
             }

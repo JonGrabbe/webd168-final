@@ -205,6 +205,11 @@ body {
     background-color: black;
     opacity: .5;
   }
+  @media (min-width: 700px) {
+    .site-header {
+      height: initial;
+    }
+  }
   .nav-top {
     display: flex;
     justify-content: space-between;
@@ -227,7 +232,6 @@ body {
     padding-top: 28px;
     padding-left: 20px;
     box-sizing: border-box;
-    transition: all .5s ease-in;
   }
   #find-a-pet-dropdown .find-a-pet-submenu {
     display: none;
@@ -235,6 +239,11 @@ body {
   #find-a-pet-dropdown.menu-opened .find-a-pet-submenu {
     display: block;
     width: 90%;
+  }
+  @media (min-width: 700px) {
+    #find-a-pet-dropdown.menu-opened .find-a-pet-submenu {
+      width: initial;
+    }
   }
   @media (min-width: 700px) {
     .site-header.menu-closed .expand-menu-item {
@@ -303,7 +312,7 @@ body {
     .find-a-pet-submenu button {
       display: none;
     }
-    .find-a-pet-submenu nav {
+    .find-a-pet-submenu ul {
       display: flex;
       justify-content: flex-end;
     }
