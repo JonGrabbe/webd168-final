@@ -375,12 +375,13 @@ body {
   align-items: center;
 }
 
-.pet-card .buttons button {
+.pet-card .buttons button, .pet-card .buttons a {
   color: white;
   border: 1px solid white;
   padding: 1rem .8rem;
   width: 200px;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .flip-wrapper {

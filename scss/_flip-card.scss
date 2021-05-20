@@ -20,13 +20,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        button {
+        button, a {
             color: $primary-text;
             border: 1px solid $primary-text;
             padding: 1rem .8rem;
             width: 200px;
             // box-sizing: border-box;
             margin-bottom: 1rem;
+            text-align: center;
         }
     }
 }
