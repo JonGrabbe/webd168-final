@@ -7,7 +7,14 @@
             width: 100%;
         }
         .col-4 {
-            max-width: 300px;
+            max-width: 24%;
+        }
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include desktop {
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 }
+

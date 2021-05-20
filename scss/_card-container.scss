@@ -1,0 +1,12 @@
+.cards-container {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }   
+}
+@media(min-width: 1400px) {
+    .cards-container {
+        .row {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

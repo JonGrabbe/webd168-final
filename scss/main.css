@@ -170,7 +170,19 @@ body {
 }
 
 .container-4 .row .col-4 {
-  max-width: 300px;
+  max-width: 24%;
+}
+
+@media (min-width: 700px) {
+  .container-4 .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .container-4 .row {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .site-header {
@@ -385,6 +397,7 @@ body {
   background-color: #8C5B97;
   perspective: 6000px;
   background-color: white;
+  max-width: 300px;
 }
 
 .pet-card:hover .flip-wrapper, .pet-card:focus .flip-wrapper, .pet-card:focus-within .flip-wrapper {
@@ -414,11 +427,17 @@ body {
 }
 
 .flip-wrapper {
-  width: 300px;
+  width: 280px;
   height: 400px;
   position: relative;
   transition: all .3s linear;
   transform-style: preserve-3d;
+}
+
+@media (min-width: 700px) {
+  .flip-wrapper {
+    width: 300px;
+  }
 }
 
 .bgc {

@@ -3,14 +3,13 @@
     background-color: $primary;
     perspective: 6000px;
     background-color: white;
+    max-width: 300px;
     &:hover, &:focus, &:focus-within {
         .flip-wrapper {
             transform: rotateY(180deg);
             transform-origin: center;
         }
     }
-    
-    
     .title {
         background-color: $primary;
         color: $primary-text;
@@ -32,11 +31,14 @@
     }
 }
 .flip-wrapper {
-    width: 300px;
+    width: 280px;
     height: 400px;
     position: relative;
     transition: all .3s linear;
     transform-style: preserve-3d;
+    @include tablet {
+        width: 300px;
+    }
 }
 .bgc {
     display: inline-block;
