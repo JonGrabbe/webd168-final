@@ -1,0 +1,13 @@
+.container-4 {
+    .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        .col {
+            width: 100%;
+        }
+        .col-4 {
+            max-width: 300px;
+        }
+    }
+}

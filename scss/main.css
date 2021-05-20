@@ -138,11 +138,8 @@ body {
   fill: #60B0BA;
 }
 
-.about {
-  padding: 0 1rem;
-}
-
 .main-content-wrapper {
+  padding: 0 1rem;
   box-sizing: border-box;
 }
 
@@ -160,6 +157,20 @@ body {
     width: 95%;
     margin: 0 auto;
   }
+}
+
+.container-4 .row {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.container-4 .row .col {
+  width: 100%;
+}
+
+.container-4 .row .col-4 {
+  max-width: 300px;
 }
 
 .site-header {
