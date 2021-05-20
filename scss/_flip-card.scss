@@ -10,6 +10,7 @@
     .title {
         background-color: $primary;
         color: $primary-text;
+        text-align: center;
     }
     .buttons {
         display: flex;
@@ -63,4 +64,9 @@
     backface-visibility: hidden;
     background-color: $primary;
     color: white;
+    ul {
+        li {
+            margin: 16px;
+        }
+    }
 }

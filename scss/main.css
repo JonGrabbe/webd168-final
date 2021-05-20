@@ -346,6 +346,7 @@ body {
 .pet-card .title {
   background-color: #8C5B97;
   color: white;
+  text-align: center;
 }
 
 .pet-card .buttons {
@@ -401,6 +402,10 @@ body {
   backface-visibility: hidden;
   background-color: #8C5B97;
   color: white;
+}
+
+.flip-b ul li {
+  margin: 16px;
 }
 
 .site-footer {
