@@ -13,8 +13,11 @@
     transition: all .2s linear;
     z-index: -1;
 }
-.slide-button-ani:hover {
-    &::after {
-        width: 100%;
+.slide-button-ani {
+    &:hover, &:focus, &:focus-within {
+        &::after {
+            width: 100%;
+        }
     }
+    
 }
