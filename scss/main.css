@@ -345,6 +345,21 @@ body {
 
 .pet-card .title {
   background-color: #8C5B97;
+  color: white;
+}
+
+.pet-card .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pet-card .buttons button {
+  color: white;
+  border: 1px solid white;
+  padding: 1rem .8rem;
+  width: 200px;
+  margin-bottom: 1rem;
 }
 
 .flip-wrapper {
@@ -362,8 +377,6 @@ body {
 .menu {
   width: 100%;
   height: 100%;
-  position: relative;
-  top: 8px;
 }
 
 .flip-a {
@@ -375,6 +388,9 @@ body {
 }
 
 .flip-b {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: absolute;
   left: 0;
   right: 0;
