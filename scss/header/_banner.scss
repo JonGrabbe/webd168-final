@@ -1,0 +1,26 @@
+@mixin darkOverlay {
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: black;
+        opacity: .5;
+    }
+}
+.site-banner-container {
+    //center text
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 100%;
+    }
+    @include darkOverlay;
+}
