@@ -358,7 +358,7 @@ body {
   background-color: white;
 }
 
-.pet-card:hover .flip-wrapper {
+.pet-card:hover .flip-wrapper, .pet-card:focus .flip-wrapper, .pet-card:focus-within .flip-wrapper {
   transform: rotateY(180deg);
   transform-origin: center;
 }
