@@ -14,12 +14,12 @@
     }
 }
 @mixin bannerMix {
-    height: 40vh;
+    height: 30vh;
     background-image: url('../../images/banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    p {
+    .text {
         //banner text
         color: white;
         z-index: 100;
@@ -35,7 +35,12 @@
     @include darkOverlay;
 }
 
-@media(min-width: 1000px) {
+.site-banner-container {
+    .text {
+        text-align: center;
+    }
+}
+@media(min-width: 750px) {
     .site-banner-container {
         @include bannerMix;
     }

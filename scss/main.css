@@ -17,7 +17,7 @@ a {
 
 * {
   color: inherit;
-  font-family: inherit;
+  font-weight: normal;
 }
 
 button {
@@ -162,9 +162,13 @@ body {
   }
 }
 
-@media (min-width: 1000px) {
+.site-banner-container .text {
+  text-align: center;
+}
+
+@media (min-width: 750px) {
   .site-banner-container {
-    height: 40vh;
+    height: 30vh;
     background-image: url("../../images/banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -175,7 +179,7 @@ body {
     align-items: center;
     position: relative;
   }
-  .site-banner-container p {
+  .site-banner-container .text {
     color: white;
     z-index: 100;
   }
