@@ -20,6 +20,7 @@ addEventToId('menu-button', function() {
 function openFindPetSubMenu() {
     // elm('find-a-pet-dropdown').classList.toggle()
     toggleClass('find-a-pet-dropdown', 'menu-opened');
+    toggleClass('menu', 'background-cover');
 }
 
 addEventToId('find-a-pet-dropdown-button', openFindPetSubMenu);
