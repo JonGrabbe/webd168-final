@@ -698,39 +698,42 @@ card filpping animation
 
 .search-by-animal-container ul {
   padding: 1rem;
+  padding-bottom: 0;
 }
 
-.search-by-animal-container ul li {
-  font-size: 1.19rem;
-  line-height: 1.26rem;
-  padding-top: 0.316rem;
-  margin-bottom: 0.947rem;
-}
-
-.search-by-animal-container ul li a {
-  position: relative;
-}
-
-.search-by-animal-container ul li a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 3px;
-  bottom: -5px;
-  left: 0;
-  background-color: #60B0BA;
-  visibility: hidden;
-  transition: all .3s;
-}
-
-.search-by-animal-container ul li a:hover::after, .search-by-animal-container ul li a:focus::after {
-  visibility: visible;
-  width: 105%;
+.search-by-animal-container ul li > *:first-child {
+  margin-top: 0;
 }
 
 @media (min-width: 720px) {
   .search-by-animal-container {
     max-width: 600px;
+  }
+  .search-by-animal-container li {
+    display: inline-block;
+    margin-right: 1.5rem;
+    font-size: 1.19rem;
+    line-height: 1.26rem;
+    padding-top: 0.316rem;
+    margin-bottom: 0.947rem;
+  }
+  .search-by-animal-container li a {
+    position: relative;
+  }
+  .search-by-animal-container li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: #60B0BA;
+    visibility: hidden;
+    transition: all .3s;
+  }
+  .search-by-animal-container li a:hover::after, .search-by-animal-container li a:focus::after {
+    visibility: visible;
+    width: 105%;
   }
 }
 

@@ -13,7 +13,18 @@
     //nav links
     ul {
         padding: 1rem;
+        padding-bottom: 0;
         li {
+            & > *:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    @include animals-tablet {
+        max-width: 600px;
+        li {
+            display: inline-block;
+            margin-right: 1.5rem;
             font-size: 1.19rem;
             line-height: 1.26rem;
             padding-top: 0.316rem;
@@ -22,9 +33,6 @@
                 @include slideLinkHover;
             }
         }
-    }
-    @include animals-tablet {
-        max-width: 600px;
     }
     @include animals-laptop {
         max-width: 1190px;
