@@ -213,6 +213,12 @@ body {
   color: white;
 }
 
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .site-banner-container .text {
   padding: 0 1rem;
   text-align: center;
@@ -584,6 +590,10 @@ card filpping animation
     max-width: 1190px;
     grid-gap: 0;
   }
+}
+
+.pet-cards-container .see-all-pets-link-container {
+  margin-top: 2rem;
 }
 
 .site-footer {
