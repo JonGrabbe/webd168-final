@@ -1,0 +1,13 @@
+.search-by-animal-container {
+    .title {
+        background-color: $primary;
+        color: $primary-text;
+        text-align: center;
+        padding: 10px;//fallback
+        padding: .5rem;
+    }
+    //nav links
+    ul {
+        margin: 1rem;
+    }
+}

@@ -669,4 +669,16 @@ card filpping animation
 .site-footer > *:last-child {
   margin-bottom: 0;
 }
+
+.search-by-animal-container .title {
+  background-color: #8C5B97;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  padding: .5rem;
+}
+
+.search-by-animal-container ul {
+  margin: 1rem;
+}
 /*# sourceMappingURL=main.css.map */
