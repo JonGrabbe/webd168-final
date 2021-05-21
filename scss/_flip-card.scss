@@ -9,12 +9,11 @@
             transform-origin: center;
         }
     }
-    
-    
     .title {
         background-color: $primary;
         color: $primary-text;
         text-align: center;
+        margin: 0;
     }
     .buttons {
         display: flex;

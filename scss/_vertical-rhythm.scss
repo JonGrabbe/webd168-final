@@ -4,35 +4,44 @@
  */
 
  html, body {
-	font-size: 16px;
-    line-height: 1.5;
+	// font: 16px/1.5 'Helvetica';
 }
 
 h1, h2, h3, h4 {
 	font-weight: normal;
 }
 
-$v-rhythm-levels: (
-	4: ( 2.06rem, 1.45rem, 0.394rem, 0.333rem ),
-	3: ( 1.75rem, 1.71rem, 0.500rem, 0.357rem ),
-	2: ( 1.44rem, 1.04rem, 0.174rem, 0.870rem ),
-	1: ( 1.19rem, 1.26rem, 0.316rem, 0.947rem ),
-	0: ( 1.00rem, 1.50rem, 0.438rem, 1.06rem ),
-);
+h1 {
+	font-size: 2.06rem;
+	line-height: 1.45rem;
+	padding-top: 0.394rem;
+	margin-bottom: 0.333rem;
+}
 
-/**
- * Sets vertical–rhythm for the given level.
- * Usage:
- *
- * 	h1 {
- * 		@include v-rhythm( 4 );
- * 	}
- */
-@mixin v-rhythm( $level ) {
-	$rhythm: map-get( $v-rhythm-levels, $level );
+h2 {
+	font-size: 1.75rem;
+	line-height: 1.71rem;
+	padding-top: 0.500rem;
+	margin-bottom: 0.357rem;
+}
 
-	font-size: nth( $rhythm, 1 );
-	line-height: nth( $rhythm, 2 );
-	padding-top: nth( $rhythm, 3 );
-	margin-bottom: nth( $rhythm, 4 );
+h3 {
+	font-size: 1.44rem;
+	line-height: 1.04rem;
+	padding-top: 0.174rem;
+	margin-bottom: 0.870rem;
+}
+
+h4 {
+	font-size: 1.19rem;
+	line-height: 1.26rem;
+	padding-top: 0.316rem;
+	margin-bottom: 0.947rem;
+}
+
+p {
+	font-size: 1.00rem;
+	line-height: 1.50rem;
+	padding-top: 0.438rem;
+	margin-bottom: 1.06rem;
 }
