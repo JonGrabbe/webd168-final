@@ -359,6 +359,10 @@ body {
     .site-header nav a {
       position: relative;
     }
+    .site-header nav a:hover {
+      color: #60B0BA;
+      font-weight: bold;
+    }
     .site-header nav a::after {
       content: '';
       position: absolute;
@@ -724,6 +728,10 @@ card filpping animation
   .search-by-animal-container li a {
     position: relative;
   }
+  .search-by-animal-container li a:hover {
+    color: #60B0BA;
+    font-weight: bold;
+  }
   .search-by-animal-container li a::after {
     content: '';
     position: absolute;
@@ -780,6 +788,70 @@ card filpping animation
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+}
+
+.pagination-container {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.pagination-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-container ul li {
+  margin-right: 1rem;
+}
+
+.pagination-container ul li:last-child {
+  margin-right: 0;
+}
+
+.pagination-container ul li a {
+  font-weight: bold;
+}
+
+.pagination-container ul li a {
+  position: relative;
+}
+
+.pagination-container ul li a:hover {
+  color: #60B0BA;
+  font-weight: bold;
+}
+
+.pagination-container ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #60B0BA;
+  visibility: hidden;
+  transition: all .3s;
+}
+
+.pagination-container ul li a:hover::after, .pagination-container ul li a:focus::after {
+  visibility: visible;
+  width: 105%;
+}
+
+@media (min-width: 720px) {
+  .pagination-container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pagination-container {
+    grid-column-start: 1;
+    grid-column-end: 5;
   }
 }
 /*# sourceMappingURL=main.css.map */

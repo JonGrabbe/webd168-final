@@ -33,6 +33,10 @@ $defaultContentPadding: 0 1rem;
     & {
         position: relative;
     }
+    &:hover {
+        color: $secondary;
+        font-weight: bold;
+    }
     &::after {
         content: '';
     position: absolute;

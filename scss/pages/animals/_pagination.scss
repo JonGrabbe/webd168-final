@@ -1,0 +1,28 @@
+.pagination-container {
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+            margin-right: 1rem;
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                font-weight: bold;
+                @include slideLinkHover;               
+            }
+        }
+    }
+    @include animals-tablet {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    @include animals-laptop {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+}
