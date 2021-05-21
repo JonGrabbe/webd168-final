@@ -197,6 +197,10 @@ body {
   }
 }
 
+.about {
+  padding: 0 2rem;
+}
+
 .btn {
   min-width: 10rem;
   padding: 10px 0;
@@ -667,6 +671,11 @@ card filpping animation
   margin-bottom: 0;
 }
 
+.search-by-animal-container {
+  max-width: 270px;
+  margin: 0 auto;
+}
+
 .search-by-animal-container .title {
   background-color: #8C5B97;
   color: white;
@@ -677,5 +686,23 @@ card filpping animation
 
 .search-by-animal-container ul {
   margin: 1rem;
+}
+
+@media (min-width: 720px) {
+  .search-by-animal-container {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .search-by-animal-container {
+    max-width: 1190px;
+  }
+}
+
+@media (min-width: 1650px) {
+  .search-by-animal-container {
+    width: 270px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

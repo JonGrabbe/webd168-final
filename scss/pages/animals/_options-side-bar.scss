@@ -1,4 +1,6 @@
 .search-by-animal-container {
+    max-width: 270px;
+    margin: 0 auto;
     .title {
         background-color: $primary;
         color: $primary-text;
@@ -9,5 +11,14 @@
     //nav links
     ul {
         margin: 1rem;
+    }
+    @media(min-width: 720px) {
+        max-width: 600px;
+    }
+    @media(min-width: 1200px) {
+        max-width: 1190px;
+    }
+    @media(min-width: 1650px) {
+        width: 270px;
     }
 }
