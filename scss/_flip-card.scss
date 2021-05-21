@@ -4,15 +4,15 @@ card filpping animation
 
 //fallback for older browsers
 .pet-card {
+    margin-top: 30px;
     //card container
     display: inline-block;
     background-color: $primary;
-    perspective: 6000px;
     background-color: white;
     &:hover, &:focus, &:focus-within {
         .flip-wrapper {
-            transform: rotateY(180deg);
-            transform-origin: center;
+            transform: none;
+            transform-origin: initial;
         }
     }
     .title {
@@ -24,16 +24,18 @@ card filpping animation
     }
     .buttons {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        flex-direction: column;
         button, a {
             color: $primary-text;
             border: 1px solid $primary-text;
+            padding: 1em .8em;
             padding: 1rem .8rem;
             width: 200px;
+            margin-bottom: 16px;
             margin-bottom: 1rem;
             text-align: center;
-            z-index: 100;
         }
     }
 }
@@ -67,6 +69,7 @@ card filpping animation
 
 @supports(transform-style: preserve-3d) {
     .pet-card {
+        margin-top: initial;
         //card container
         display: inline-block;
         background-color: $primary;

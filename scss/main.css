@@ -483,15 +483,15 @@ body {
 card filpping animation
 */
 .pet-card {
+  margin-top: 30px;
   display: inline-block;
   background-color: #8C5B97;
-  perspective: 6000px;
   background-color: white;
 }
 
 .pet-card:hover .flip-wrapper, .pet-card:focus .flip-wrapper, .pet-card:focus-within .flip-wrapper {
-  transform: rotateY(180deg);
-  transform-origin: center;
+  transform: none;
+  transform-origin: initial;
 }
 
 .pet-card .title {
@@ -504,18 +504,20 @@ card filpping animation
 
 .pet-card .buttons {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .pet-card .buttons button, .pet-card .buttons a {
   color: white;
   border: 1px solid white;
+  padding: 1em .8em;
   padding: 1rem .8rem;
   width: 200px;
+  margin-bottom: 16px;
   margin-bottom: 1rem;
   text-align: center;
-  z-index: 100;
 }
 
 .flip-wrapper {
@@ -542,6 +544,7 @@ card filpping animation
 
 @supports (transform-style: preserve-3d) {
   .pet-card {
+    margin-top: initial;
     display: inline-block;
     background-color: #8C5B97;
     perspective: 6000px;
