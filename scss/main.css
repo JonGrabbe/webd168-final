@@ -705,6 +705,10 @@ card filpping animation
   margin-top: 0;
 }
 
+.search-by-animal-container ul li a {
+  font-size: 1.19rem;
+}
+
 @media (min-width: 720px) {
   .search-by-animal-container {
     max-width: 600px;
@@ -746,6 +750,7 @@ card filpping animation
 @media (min-width: 1760px) {
   .search-by-animal-container {
     width: 270px;
+    background-color: #EEEEF5;
   }
 }
 
@@ -755,6 +760,13 @@ card filpping animation
     position: sticky;
     left: 20px;
     top: 0;
+  }
+  .main-sidebar .search-by-animal-container ul {
+    padding: 1rem;
+  }
+  .main-sidebar .search-by-animal-container ul li {
+    display: block;
+    margin-right: 0;
   }
 }
 
