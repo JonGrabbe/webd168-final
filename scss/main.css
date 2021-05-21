@@ -40,6 +40,11 @@ button:hover {
  * Vertical rhythm by Syncope
  * http://nowodzinski.pl/syncope
  */
+html, body {
+  font-weight: 16px;
+  line-height: 1.5;
+}
+
 h1, h2, h3, h4 {
   font-weight: normal;
 }
@@ -475,6 +480,7 @@ body {
   background-color: #8C5B97;
   color: white;
   text-align: center;
+  padding: 8px;
   margin: 0;
 }
 
