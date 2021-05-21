@@ -704,9 +704,9 @@ card filpping animation
 @media (min-width: 1760px) {
   .search-by-animal-container {
     width: 270px;
-    position: fixed;
+    position: sticky;
     left: 20px;
-    top: 21.5vh;
+    top: 0;
   }
   .search-by-animal-container ul {
     background-color: #60B0BA;

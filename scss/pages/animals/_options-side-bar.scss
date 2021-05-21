@@ -13,17 +13,6 @@
     ul {
         padding: 1rem;
     }
-    // @media(min-width: 720px) {
-    //     max-width: 600px;
-    // }
-    // @media(min-width: 1200px) {
-    //     max-width: 1190px;
-    // }
-    // @media(min-width: 1650px) {
-    //     //two cols layout with side bar on the left
-    //     width: 270px;
-    // }
-
     @include animals-tablet {
         max-width: 600px;
     }
@@ -33,9 +22,10 @@
     @include animals-large-screen {
         width: 270px;
         //fixed to the left col
-        position: fixed;
+        position: sticky;
         left: 20px;
-        top: 21.5vh;
+        top: 0;
+        // top: 21.5vh;
         ul {
             background-color: $secondary;
             h3 {
