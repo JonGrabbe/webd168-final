@@ -1,8 +1,9 @@
 .pet-search-container {
+    max-width: 1950px;
+    margin: 0 auto;
    @include animals-large-screen {
        display: flex;
        justify-content: space-between;
        align-items: flex-start;
-    //    flex-direction: column;
    }
 }
