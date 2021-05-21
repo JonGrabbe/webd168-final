@@ -1,0 +1,7 @@
+.site-banner-container {
+    display: none;
+    @media(min-width: 1200px) {
+        //container needs to be flex and not display: block
+        display: flex;
+    }
+}

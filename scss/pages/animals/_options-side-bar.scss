@@ -18,6 +18,9 @@
             line-height: 1.26rem;
             padding-top: 0.316rem;
             margin-bottom: 0.947rem;
+            a {
+                @include slideLinkHover;
+            }
         }
     }
     @include animals-tablet {

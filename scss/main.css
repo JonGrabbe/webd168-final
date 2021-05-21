@@ -671,6 +671,16 @@ card filpping animation
   margin-bottom: 0;
 }
 
+.site-banner-container {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .site-banner-container {
+    display: flex;
+  }
+}
+
 .search-by-animal-container {
   max-width: 270px;
   margin: 0 auto;
@@ -695,6 +705,27 @@ card filpping animation
   line-height: 1.26rem;
   padding-top: 0.316rem;
   margin-bottom: 0.947rem;
+}
+
+.search-by-animal-container ul li a {
+  position: relative;
+}
+
+.search-by-animal-container ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #60B0BA;
+  visibility: hidden;
+  transition: all .3s;
+}
+
+.search-by-animal-container ul li a:hover::after, .search-by-animal-container ul li a:focus::after {
+  visibility: visible;
+  width: 105%;
 }
 
 @media (min-width: 720px) {
