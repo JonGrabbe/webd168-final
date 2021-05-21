@@ -32,6 +32,7 @@ card filpping animation
             width: 200px;
             margin-bottom: 1rem;
             text-align: center;
+            z-index: 100;
         }
     }
 }
@@ -53,10 +54,14 @@ card filpping animation
 .flip-a {
     //animal image container
     backface-visibility: hidden;
-    background-image: url("../images/raw/luna.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url("../images/raw/luna.jpg");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    overflow: hidden;
+    img {
+        height: 100%;
+    }
 }
 .flip-b {
     // pet info div
