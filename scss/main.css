@@ -1,4 +1,4 @@
-/* links bottom border animation */
+/* bottom border sliding on hover and focus animation */
 @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Niconne&family=Open+Sans:wght@300&display=swap");
 body {
@@ -471,6 +471,9 @@ body {
   background-color: black;
 }
 
+/*
+card filpping animation
+*/
 .pet-card {
   display: inline-block;
   background-color: #8C5B97;

@@ -28,7 +28,7 @@ $defaultContentPadding: 0 1rem;
     }
 }
 
-/* links bottom border animation */
+/* bottom border sliding on hover and focus animation */
 @mixin slideLinkHover {
     & {
         position: relative;

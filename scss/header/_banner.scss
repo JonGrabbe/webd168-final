@@ -1,3 +1,4 @@
+//creates a shadow effect on an element
 @mixin darkOverlay {
     position: relative;
     &:after {
@@ -13,6 +14,7 @@
         opacity: .5;
     }
 }
+//sets background image with dark overlay
 @mixin bannerMix {
     height: 40vh;
     background-image: url('../../images/banner.jpg');
