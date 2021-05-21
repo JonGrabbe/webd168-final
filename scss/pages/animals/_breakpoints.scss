@@ -1,0 +1,17 @@
+@mixin animals-tablet($width: 720px) {
+    @media(min-width: #{$width}) {
+        @content;
+    }
+}
+
+@mixin animals-laptop($width: 1200px) {
+    @media(min-width: #{$width}) {
+        @content;
+    }
+}
+
+@mixin animals-large-screen($width: 1650px) {
+    @media(min-width: #{$width}) {
+        @content;
+    }
+}
