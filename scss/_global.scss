@@ -79,3 +79,15 @@ body {
         margin: 0 auto;
     }
 }
+
+.btn {
+    @extend .slide-button-ani;
+    min-width: 10rem;
+    padding: 10px 0;
+    display: inline-block;
+    border: 1px solid $secondary;
+    text-align: center;
+    &:hover {
+        color: white;
+    }
+}

@@ -88,11 +88,11 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-.slide-button-ani {
+.slide-button-ani, .btn {
   position: relative;
 }
 
-.slide-button-ani::after {
+.slide-button-ani::after, .btn::after {
   content: '';
   position: absolute;
   left: 0;
@@ -104,7 +104,7 @@ html {
   z-index: -1;
 }
 
-.slide-button-ani:hover::after, .slide-button-ani:focus::after, .slide-button-ani:focus-within::after {
+.slide-button-ani:hover::after, .btn:hover::after, .slide-button-ani:focus::after, .btn:focus::after, .slide-button-ani:focus-within::after, .btn:focus-within::after {
   width: 100%;
 }
 
@@ -199,6 +199,18 @@ body {
     width: 95%;
     margin: 0 auto;
   }
+}
+
+.btn {
+  min-width: 10rem;
+  padding: 10px 0;
+  display: inline-block;
+  border: 1px solid #60B0BA;
+  text-align: center;
+}
+
+.btn:hover {
+  color: white;
 }
 
 .site-banner-container .text {
