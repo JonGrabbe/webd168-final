@@ -23,7 +23,7 @@
 //modern CSS
 @supports(display: grid) {
     .site-header {
-        //reset to nullify fallback
+        //reset to nullify older browser fallback
         li {
             margin: initial;
         }
