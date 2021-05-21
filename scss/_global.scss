@@ -63,11 +63,9 @@ body {
 
 
 //MAIN
-.about {
-    padding: 0 1rem;
-}
 .main-content-wrapper {
     box-sizing: border-box;
+    padding: 0 1rem;
     @include desktop {
         max-width: 1500px; //ie 9 - 6
         max-width: 94em; //1500px
@@ -78,6 +76,9 @@ body {
         width: 95%;
         margin: 0 auto;
     }
+}
+.about {
+    // padding: 0 2rem;
 }
 
 .btn {

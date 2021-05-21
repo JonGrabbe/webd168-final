@@ -176,12 +176,9 @@ body {
   fill: #60B0BA;
 }
 
-.about {
-  padding: 0 1rem;
-}
-
 .main-content-wrapper {
   box-sizing: border-box;
+  padding: 0 1rem;
 }
 
 @media (min-width: 1000px) {
