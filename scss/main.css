@@ -682,10 +682,11 @@ card filpping animation
   text-align: center;
   padding: 10px;
   padding: .5rem;
+  margin-bottom: 0;
 }
 
 .search-by-animal-container ul {
-  margin: 1rem;
+  padding: 1rem;
 }
 
 @media (min-width: 720px) {
@@ -700,9 +701,29 @@ card filpping animation
   }
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1760px) {
   .search-by-animal-container {
     width: 270px;
+    position: fixed;
+    left: 20px;
+    top: 21.5vh;
+  }
+  .search-by-animal-container ul {
+    background-color: #60B0BA;
+  }
+  .search-by-animal-container ul h3 {
+    margin-bottom: 2rem;
+  }
+  .search-by-animal-container ul h3:first-child {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1760px) {
+  .pet-search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 /*# sourceMappingURL=main.css.map */

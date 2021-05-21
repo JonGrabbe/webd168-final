@@ -10,7 +10,7 @@
     }
 }
 
-@mixin animals-large-screen($width: 1650px) {
+@mixin animals-large-screen($width: 1760px) {
     @media(min-width: #{$width}) {
         @content;
     }
