@@ -862,7 +862,39 @@ card filpping animation
   align-items: flex-start;
 }
 
+.menu-container {
+  padding: 32px;
+}
+
+.menu-container li {
+  position: relative;
+}
+
+.menu-container li:hover:before, .menu-container li:focus:before {
+  content: '';
+  position: absolute;
+  left: -12.5px;
+  top: 4px;
+  height: 1rem;
+  width: 5px;
+  background-color: #60B0BA;
+}
+
 .menu-container .sub-menu li {
   padding-left: 20px;
+}
+
+.menu-container .sub-menu li:hover:before, .menu-container .sub-menu li:focus:before {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 4px;
+  height: 1rem;
+  width: 5px;
+  background-color: #60B0BA;
+}
+
+.menu-container .title {
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

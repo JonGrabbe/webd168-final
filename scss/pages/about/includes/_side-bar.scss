@@ -1,7 +1,31 @@
+@mixin leftBorderHover($color: $secondary, $left-val: -12.5px) {
+    &:before {
+        content: '';
+        position: absolute;
+        left: $left-val;
+        top: 4px;
+        height: 1rem;
+        width: 5px;
+        background-color: $color;
+    }
+}
 .menu-container {
+    padding: 32px;
+    li {
+        position: relative;
+        &:hover, &:focus {
+            @include leftBorderHover;
+        }
+    }
     .sub-menu {
         li {
             padding-left: 20px;
+            &:hover, &:focus {
+                @include leftBorderHover($left-val: 9px);
+            }
         }
+    }
+    .title {
+        font-weight: bold;
     }
 }
