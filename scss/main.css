@@ -859,10 +859,14 @@ card filpping animation
 .about-content-container {
   display: flex;
   justify-content: flex-start;
+  max-width: 1650px;
+  margin: 0 auto;
 }
 
-.about-content-container .side-bar {
-  width: 30%;
+@media (min-width: 1600px) {
+  .about-content-container .side-bar {
+    width: 25%;
+  }
 }
 
 .side-bar {
@@ -870,7 +874,7 @@ card filpping animation
 }
 
 .menu-container {
-  padding: 32px;
+  padding: 20px;
 }
 
 .menu-container li {
@@ -929,17 +933,18 @@ card filpping animation
   font-weight: bold;
 }
 
+.about-content .text-wrapper {
+  padding: 1rem;
+  max-width: 1200px;
+  max-width: 62rem;
+}
+
 @media (min-width: 720px) {
   .side-bar {
     display: block;
     color: white;
     background-color: #60B0BA;
-    min-width: 20rem;
-  }
-  .text-wrapper {
-    padding: 1rem;
-    max-width: 1200px;
-    max-width: 62rem;
+    min-width: 16rem;
   }
 }
 

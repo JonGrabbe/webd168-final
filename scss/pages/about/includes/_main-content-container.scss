@@ -1,7 +1,11 @@
 .about-content-container {
     display: flex;
     justify-content: flex-start;
-    .side-bar {
-        width: 30%;
+    max-width: 1650px;
+    margin: 0 auto;
+    @media(min-width: 1600px) {
+        .side-bar {
+            width: 25%;
+        }
     }
 }

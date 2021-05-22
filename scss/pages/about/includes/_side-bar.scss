@@ -20,7 +20,7 @@
     display: none;
 }
 .menu-container {
-    padding: 32px;
+    padding: 20px;
     li {
         position: relative;
         &:hover, &:focus {
@@ -39,18 +39,20 @@
         font-weight: bold;
     }
 }
+.about-content {
+    .text-wrapper {
+        padding: 1rem;
+        max-width: 1200px;
+        max-width: 62rem;
+    }
+}
 
 @include about-tablet {
     .side-bar {
         display: block;
         color: white;
         background-color: $secondary;
-        min-width: 20rem;
-    }
-    .text-wrapper {
-        padding: 1rem;
-        max-width: 1200px;
-        max-width: 62rem;
+        min-width: 16rem;
     }
 }
 @include about-desktop {
