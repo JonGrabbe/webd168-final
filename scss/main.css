@@ -855,4 +855,14 @@ card filpping animation
     grid-column-end: 5;
   }
 }
+
+.about-content-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.menu-container .sub-menu li {
+  padding-left: 20px;
+}
 /*# sourceMappingURL=main.css.map */
