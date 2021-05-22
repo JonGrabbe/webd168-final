@@ -7,12 +7,16 @@
         height: 1rem;
         width: 5px;
         background-color: $color;
+        @include about-tablet {
+            background-color: white;
+        }
+        @include about-desktop {
+            background-color: $color;
+        }
     }
 }
 .menu-container {
-    display: none;
     padding: 32px;
-    color: white;
     li {
         position: relative;
         &:hover, &:focus {
@@ -34,17 +38,13 @@
 
 @include about-tablet {
     .side-bar {
+        color: white;
         background-color: $secondary;
     }
-    .menu-container {
-        display: block;
-    }
 }
-@include about-desktop {
-    .side-bar {
-        background-color: white;
-    }
-    .menu-container {
-        color: black;
-    }
-}
+// @include about-desktop {
+//     .side-bar {
+//         background-color: white;
+//         color: black;
+//     }
+// }

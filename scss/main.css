@@ -863,9 +863,7 @@ card filpping animation
 }
 
 .menu-container {
-  display: none;
   padding: 32px;
-  color: white;
 }
 
 .menu-container li {
@@ -882,6 +880,18 @@ card filpping animation
   background-color: #60B0BA;
 }
 
+@media (min-width: 720px) {
+  .menu-container li:hover:before, .menu-container li:focus:before {
+    background-color: white;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-container li:hover:before, .menu-container li:focus:before {
+    background-color: #60B0BA;
+  }
+}
+
 .menu-container .sub-menu li {
   padding-left: 20px;
 }
@@ -896,25 +906,26 @@ card filpping animation
   background-color: #60B0BA;
 }
 
+@media (min-width: 720px) {
+  .menu-container .sub-menu li:hover:before, .menu-container .sub-menu li:focus:before {
+    background-color: white;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-container .sub-menu li:hover:before, .menu-container .sub-menu li:focus:before {
+    background-color: #60B0BA;
+  }
+}
+
 .menu-container .title {
   font-weight: bold;
 }
 
 @media (min-width: 720px) {
   .side-bar {
+    color: white;
     background-color: #60B0BA;
-  }
-  .menu-container {
-    display: block;
-  }
-}
-
-@media (min-width: 1200px) {
-  .side-bar {
-    background-color: white;
-  }
-  .menu-container {
-    color: black;
   }
 }
 /*# sourceMappingURL=main.css.map */
