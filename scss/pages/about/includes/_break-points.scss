@@ -1,0 +1,11 @@
+@mixin about-tablet($width: 720px) {
+    @media(min-width: #{$width}) {
+        @content;
+    }
+}
+
+@mixin about-desktop($width: 1200px) {
+    @media(min-width: #{$width}) {
+        @content;
+    }
+}

@@ -10,7 +10,9 @@
     }
 }
 .menu-container {
+    display: none;
     padding: 32px;
+    color: white;
     li {
         position: relative;
         &:hover, &:focus {
@@ -27,5 +29,22 @@
     }
     .title {
         font-weight: bold;
+    }
+}
+
+@include about-tablet {
+    .side-bar {
+        background-color: $secondary;
+    }
+    .menu-container {
+        display: block;
+    }
+}
+@include about-desktop {
+    .side-bar {
+        background-color: white;
+    }
+    .menu-container {
+        color: black;
     }
 }

@@ -863,7 +863,9 @@ card filpping animation
 }
 
 .menu-container {
+  display: none;
   padding: 32px;
+  color: white;
 }
 
 .menu-container li {
@@ -896,5 +898,23 @@ card filpping animation
 
 .menu-container .title {
   font-weight: bold;
+}
+
+@media (min-width: 720px) {
+  .side-bar {
+    background-color: #60B0BA;
+  }
+  .menu-container {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .side-bar {
+    background-color: white;
+  }
+  .menu-container {
+    color: black;
+  }
 }
 /*# sourceMappingURL=main.css.map */
