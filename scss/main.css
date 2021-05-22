@@ -928,4 +928,11 @@ card filpping animation
     background-color: #60B0BA;
   }
 }
+
+@media (min-width: 1200px) {
+  .side-bar {
+    background-color: white;
+    color: black;
+  }
+}
 /*# sourceMappingURL=main.css.map */

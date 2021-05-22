@@ -42,9 +42,9 @@
         background-color: $secondary;
     }
 }
-// @include about-desktop {
-//     .side-bar {
-//         background-color: white;
-//         color: black;
-//     }
-// }
+@include about-desktop {
+    .side-bar {
+        background-color: white;
+        color: black;
+    }
+}
