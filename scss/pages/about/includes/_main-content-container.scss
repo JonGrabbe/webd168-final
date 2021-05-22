@@ -1,5 +1,7 @@
 .about-content-container {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    .side-bar {
+        width: 30%;
+    }
 }
