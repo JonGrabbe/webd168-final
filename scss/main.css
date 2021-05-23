@@ -865,7 +865,7 @@ card filpping animation
 
 @media (min-width: 1600px) {
   .about-content-container .side-bar {
-    width: 25%;
+    width: 21%;
   }
 }
 
@@ -875,6 +875,7 @@ card filpping animation
 
 .menu-container {
   padding: 20px;
+  padding-top: 3.0652rem;
 }
 
 .menu-container li {
