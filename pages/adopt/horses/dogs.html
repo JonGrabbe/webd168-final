@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Pet Place</title>
+    <link rel="stylesheet" href="../../../css/main.min.css" />
+    <!--[if lte IE 9]>
+      <link rel="stylesheet" href="../../../css/ie8.css" />
+    <![endif]-->
+    <noscript>
+      <style>
+        .content {
+          max-height: none;
+        }
+      </style>
+    </noscript>
+  </head>
+
+  <body>
+    <header>
+      <div id="menu" class="site-header menu-closed wrapper">
+        <div class="nav-top">
+          <h1 class="logo">
+            <a href="#">The Pet Place</a>
+          </h1>
+          <div class="controls">
+            <button id="menu-button" class="menu-button">
+              <img
+                src="../../../images/menu.svg"
+                alt=""
+                class="menu-button-icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          id="find-a-pet-dropdown"
+          class="find-a-pet-dropdown expand-menu-item"
+        >
+          <button
+            id="find-a-pet-dropdown-button"
+            class="arrow-button-container"
+          >
+            Find a pet
+            <img
+              class="arrow-right"
+              src="../../../images/arrow-down.svg"
+              alt=""
+            />
+          </button>
+          <div class="find-a-pet-submenu">
+            <button id="find-a-pet-submenu-close-button">
+              <img
+                src="../../../images/arrow-down.svg"
+                alt=""
+                class="arrow-left"
+              />
+            </button>
+
+            <nav>
+              <ul>
+                <li><a href="#">Dogs</a></li>
+                <li><a href="#">Cats</a></li>
+                <li><a href="#">Horses</a></li>
+                <li><a href="#">Barnyard</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <nav class="bottom-menu expand-menu-item">
+          <ul>
+            <li><a href="#">Adopt</a></li>
+            <li><a href="#">Rehome a pet</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Donate</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-banner-container">
+        <!-- <img src="images/banner.jpg" alt=""> -->
+        <h2 class="text">
+          browse throughout our selection of animals to find the perfect pet.
+        </h2>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <div class="pet-search-container">
+        <!-- side bar -->
+        <div class="main-sidebar">
+          <div class="search-by-animal-container">
+            <h2 class="title">Search by animal</h2>
+            <nav>
+              <ul>
+                <li>
+                  <h3><a href="cats.html">Cats</a></h3>
+                </li>
+                <li>
+                  <h3><a href="horses.html">Horses</a></h3>
+                </li>
+                <li>
+                  <h3><a href="barnyard.html">Barnyard</a></h3>
+                </li>
+                <li>
+                  <h3><a href="all-pets.html">all</a></h3>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- end of main side bar -->
+        </div>
+        <!-- animal cards -->
+        <div class="pet-cards-container main-content-wrapper">
+          <h2 class="heading">Dogs</h2>
+          <div class="row">
+            <!-- pet card -->
+            <div class="pet-card" tabindex="0">
+              <h3 class="title">jasmine</h3>
+              <div class="bgc">
+                <div class="flip-wrapper">
+                  <div class="flip-a menu">
+                    <!-- animal thumbnail background image container -->
+                    <img
+                      src="../../../images/animals/dogs/jasmine.jpg"
+                      width="280"
+                      height="400"
+                      alt="Jasmine"
+                    />
+                  </div>
+                  <div class="flip-b menu">
+                    <!-- pet information -->
+                    <ul>
+                      <li>Pitbull</li>
+                      <li>Female</li>
+                      
+                      <li>Vaccinated</li>
+                      <li>Adoption fee: $100.00</li>
+                    </ul>
+                    <div class="buttons">
+                      <a class="slide-button-ani">Adopt</a>
+                      <a class="slide-button-ani">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pet card -->
+            <div class="pet-card" tabindex="0">
+              <h3 class="title">Luna</h3>
+              <div class="bgc">
+                <div class="flip-wrapper">
+                  <div class="flip-a menu">
+                    <!-- animal thumbnail background image container -->
+                    <img
+                      src="../../../images/animals/dogs/luna.jpg"
+                      width="280"
+                      height="400"
+                      alt="Luna"
+                    />
+                  </div>
+                  <div class="flip-b menu">
+                    <!-- pet information -->
+                    <ul>
+                      <li>Huskey</li>
+                      <li>Female</li>
+                      
+                      <li>Vaccinated</li>
+                      <li>Adoption fee: $100.00</li>
+                    </ul>
+                    <div class="buttons">
+                      <a class="slide-button-ani">Adopt</a>
+                      <a class="slide-button-ani">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pet card -->
+            <div class="pet-card" tabindex="0">
+              <h3 class="title">Sarge</h3>
+              <div class="bgc">
+                <div class="flip-wrapper">
+                  <div class="flip-a menu">
+                    <!-- animal thumbnail background image container -->
+                    <img
+                      src="../../../images/animals/dogs/sarge.gif"
+                      width="280"
+                      height="400"
+                      alt="Luna"
+                    />
+                  </div>
+                  <div class="flip-b menu">
+                    <!-- pet information -->
+                    <ul>
+                      <li>Redbone Coonhound</li>
+                      <li>Male</li>
+                      <li>Neutered: no</li>
+                      <li>Vaccinated</li>
+                      <li>Adoption fee: $100.00</li>
+                    </ul>
+                    <div class="buttons">
+                      <a class="slide-button-ani">Adopt</a>
+                      <a class="slide-button-ani">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pet card -->
+            <div class="pet-card" tabindex="0">
+              <h3 class="title">Sidney</h3>
+              <div class="bgc">
+                <div class="flip-wrapper">
+                  <div class="flip-a menu">
+                    <!-- animal thumbnail background image container -->
+                    <img
+                      src="../../../images/animals/dogs/sidney.jpg"
+                      width="280"
+                      height="400"
+                      alt="Mavrik"
+                    />
+                  </div>
+                  <div class="flip-b menu">
+                    <!-- pet information -->
+                    <ul>
+                      <li>Shepherd Mix</li>
+                      <li>Male</li>
+                      
+                      <li>Vaccinated</li>
+                      <li>Adoption fee: $100.00</li>
+                    </ul>
+                    <div class="buttons">
+                      <a class="slide-button-ani">Adopt</a>
+                      <a class="slide-button-ani">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pet card -->
+            <div class="pet-card" tabindex="0">
+              <h3 class="title">Sidney</h3>
+              <div class="bgc">
+                <div class="flip-wrapper">
+                  <div class="flip-a menu">
+                    <!-- animal thumbnail background image container -->
+                    <img
+                      src="../../../images/animals/dogs/freeno.jpg"
+                      width="280"
+                      height="400"
+                      alt="Mavrik"
+                    />
+                  </div>
+                  <div class="flip-b menu">
+                    <!-- pet information -->
+                    <ul>
+                      <li>Austrailian Kelpie</li>
+                      <li>Male</li>
+                      <li>Vaccinated</li>
+                      <li>Adoption fee: $100.00</li>
+                    </ul>
+                    <div class="buttons">
+                      <a class="slide-button-ani">Adopt</a>
+                      <a class="slide-button-ani">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pet card -->
+            <div class="pet-card" tabindex="0">
+              <!-- pet name -->
+              <h3 class="title">Lucas</h3>
+              <div class="bgc">
+                <div class="flip-wrapper">
+                  <div class="flip-a menu">
+                    <!-- animal thumbnail background image container -->
+                    <img
+                      src="../../../images/animals/dogs/lucas.jpg"
+                      width="280"
+                      height="400"
+                      alt="Mavrik"
+                    />
+                  </div>
+                  <div class="flip-b menu">
+                    <!-- pet information -->
+                    <ul>
+                      <li>German Shepherd</li>
+                      <li>Male</li>
+                      
+                      <li>Vaccinated: no</li>
+                      <li>Adoption fee: $100.00</li>
+                    </ul>
+                    <div class="buttons">
+                      <a class="slide-button-ani">Adopt</a>
+                      <a class="slide-button-ani">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pet card -->
+            <div class="pet-card" tabindex="0">
+              <h3 class="title">Ezra</h3>
+              <div class="bgc">
+                <div class="flip-wrapper">
+                  <div class="flip-a menu">
+                    <!-- animal thumbnail background image container -->
+                    <img
+                      src="../../../images/animals/dogs/ezra.jpg"
+                      width="280"
+                      height="400"
+                      alt="Mavrik"
+                    />
+                  </div>
+                  <div class="flip-b menu">
+                    <!-- pet information -->
+                    <ul>
+                      <li>Golden Retriever</li>
+                      <li>Female</li>
+                      
+                      <li>Vaccinated</li>
+                      <li>Adoption fee: $100.00</li>
+                    </ul>
+                    <div class="buttons">
+                      <a class="slide-button-ani">Adopt</a>
+                      <a class="slide-button-ani">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pet card -->
+            <div class="pet-card" tabindex="0">
+              <h3 class="title">Mary</h3>
+              <div class="bgc">
+                <div class="flip-wrapper">
+                  <div class="flip-a menu">
+                    <!-- animal thumbnail background image container -->
+                    <img
+                      src="../../../images/animals/dogs/mary.jpg"
+                      width="280"
+                      height="400"
+                      alt="Mavrik"
+                    />
+                  </div>
+                  <div class="flip-b menu">
+                    <!-- pet information -->
+                    <ul>
+                      <li>Pit Bull Terrier</li>
+                      <li>Female</li>
+                      
+                      <li>Vaccinated</li>
+                      <li>Adoption fee: $100.00</li>
+                    </ul>
+                    <div class="buttons">
+                      <a class="slide-button-ani">Adopt</a>
+                      <a class="slide-button-ani">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pet card -->
+            <div class="pet-card" tabindex="0">
+              <h3 class="title">Diego</h3>
+              <div class="bgc">
+                <div class="flip-wrapper">
+                  <div class="flip-a menu">
+                    <!-- animal thumbnail background image container -->
+                    <img
+                      src="../../../images/animals/dogs/deigo.jpg"
+                      width="280"
+                      height="400"
+                      alt="Mavrik"
+                    />
+                  </div>
+                  <div class="flip-b menu">
+                    <!-- pet information -->
+                    <ul>
+                      <li> Staffordshire Bull Terrier</li>
+                      <li>Male</li>
+                      
+                      <li>Vaccinated: no</li>
+                      <li>Adoption fee: $100.00</li>
+                    </ul>
+                    <div class="buttons">
+                      <a class="slide-button-ani">Adopt</a>
+                      <a class="slide-button-ani">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pet card -->
+            <div class="pet-card" tabindex="0">
+              <h3 class="title">Apollo</h3>
+              <div class="bgc">
+                <div class="flip-wrapper">
+                  <div class="flip-a menu">
+                    <!-- animal thumbnail background image container -->
+                    <img
+                      src="../../../images/animals/dogs/apollo.jpg"
+                      width="280"
+                      height="400"
+                      alt="Mavrik"
+                    />
+                  </div>
+                  <div class="flip-b menu">
+                    <!-- pet information -->
+                    <ul>
+                      <li>Great Pyrenees Mix</li>
+                      <li>Male</li>
+                      
+                      <li>Vaccinated</li>
+                      <li>Adoption fee: $100.00</li>
+                    </ul>
+                    <div class="buttons">
+                      <a class="slide-button-ani">Adopt</a>
+                      <a class="slide-button-ani">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pet card -->
+            <div class="pet-card" tabindex="0">
+              <h3 class="title">Razz</h3>
+              <div class="bgc">
+                <div class="flip-wrapper">
+                  <div class="flip-a menu">
+                    <!-- animal thumbnail background image container -->
+                    <img
+                      src="../../../images/animals/dogs/razz.jpg"
+                      width="280"
+                      height="400"
+                      alt="Mavrik"
+                    />
+                  </div>
+                  <div class="flip-b menu">
+                    <!-- pet information -->
+                    <ul>
+                      <li>German Shepherd</li>
+                      <li>Male</li>
+                      
+                      <li>Vaccinated</li>
+                      <li>Adoption fee: $100.00</li>
+                    </ul>
+                    <div class="buttons">
+                      <a class="slide-button-ani">Adopt</a>
+                      <a class="slide-button-ani">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pet card -->
+            <div class="pet-card" tabindex="0">
+              <h3 class="title">Julius</h3>
+              <div class="bgc">
+                <div class="flip-wrapper">
+                  <div class="flip-a menu">
+                    <!-- animal thumbnail background image container -->
+                    <img
+                      src="../../../images/animals/dogs/julius.jpg"
+                      width="280"
+                      height="400"
+                      alt="Mavrik"
+                    />
+                  </div>
+                  <div class="flip-b menu">
+                    <!-- pet information -->
+                    <ul>
+                      <li>Bull terrier Mix</li>
+                      <li>Male</li>
+                      
+                      <li>Vaccinated</li>
+                      <li>Adoption fee: $100.00</li>
+                    </ul>
+                    <div class="buttons">
+                      <a class="slide-button-ani">Adopt</a>
+                      <a class="slide-button-ani">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of row -->
+            <!-- pagination -->
+            <nav class="pagination-container">
+              <ul>
+                <li><a href="" class="prev-page">Prev</a></li>
+                <li>page 1 0f 5</li>
+                <li><a href="" class="next-page">Next</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- end of row -->
+        </div>
+        <!-- end of pet cards container -->
+      </div>
+      <!-- end of pet search container -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div>
+        Icons made by
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <div>
+        Icons made by
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <div>
+        Icons made by
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+    </footer>
+
+    <!-- back to top button -->
+    <a href="#" class="back-to-top-btn" id="back-to-top-btn">
+      <svg
+        version="1.1"
+        id="Capa_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 512.002 512.002"
+        style="enable-background: new 0 0 512.002 512.002"
+        xml:space="preserve"
+      >
+        <g>
+          <g>
+            <path
+              d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+                        L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+                        l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"
+            />
+          </g>
+        </g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+      </svg>
+    </a>
+
+    <script src="../../../js/menu.js"></script>
+    <script src="../../../js/scroll.js"></script>
+    <script src="../../../js/drop-down-menu.js"></script>
+  </body>
+</html>
