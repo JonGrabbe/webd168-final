@@ -96,6 +96,23 @@ body {
     
 }
 
+.main-ul {
+    li {
+        list-style-type: disc;
+        margin-left: 2rem;
+    }
+}
+.main-ul {
+    li {
+        list-style-type: disc;
+        margin-left: 2rem;
+    }
+}
+.main-ol li {
+    list-style-type: decimal;
+    margin-left: 2rem;
+}
+
 .center-div {
     display: flex;
     justify-content: center;
