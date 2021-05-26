@@ -55,6 +55,13 @@ card filpping animation
             }
         }
     }
+    .buttons {
+        a {
+            display: inline-block;
+            margin-left: 20px;
+        }
+    }
+    padding-bottom: 16px;
 }
 .flip-b {
     transform: none;
@@ -101,6 +108,15 @@ card filpping animation
                 text-align: center;
                 z-index: 100;
             }
+        }
+        .flip-b {
+            .buttons {
+                a {
+                    display: inline-block;
+                    margin-left: 0;
+                }
+            }
+            padding-bottom: 0;
         }
     }
     .flip-wrapper {
