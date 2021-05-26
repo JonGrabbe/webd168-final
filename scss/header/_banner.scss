@@ -17,7 +17,7 @@
 //sets background image with dark overlay
 @mixin bannerMix {
     height: 40vh;
-    background-image: url('../../images/banner.jpg');
+    background-image: url('../images/banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
