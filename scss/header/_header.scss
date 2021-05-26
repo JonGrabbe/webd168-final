@@ -23,9 +23,6 @@
 
 //modern CSS
 @supports(display: grid) {
-    body {
-        margin-top: 100px;
-    }
     .site-header {
         //reset to nullify older browser fallback
         li {
@@ -35,11 +32,7 @@
             display: inline-block;
         }
 
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
+        position: relative;
         background-color: $primary;
         color: $primary-text;
         height: 100vh;

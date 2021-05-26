@@ -294,15 +294,8 @@ body {
 }
 
 @supports (display: grid) {
-  body {
-    margin-top: 100px;
-  }
   .site-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+    position: relative;
     background-color: #8C5B97;
     color: white;
     height: 100vh;
