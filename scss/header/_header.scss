@@ -19,6 +19,7 @@
     font-size: 2rem;
     font-family: 'Niconne', cursive;
     margin: 0;
+    padding: 0;
 }
 
 //modern CSS
@@ -37,8 +38,23 @@
         color: $primary-text;
         height: 100vh;
         box-sizing: border-box;
+        padding: 20px;
+        //menu links
+        #find-a-pet-dropdown-button {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+            @include tablet {
+                font-size: 1.2rem;
+            }
+        }
         li {
-            margin: 1rem 0;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+            @include tablet {
+                font-size: 1.2rem;
+                margin-bottom: 0;
+            }
         }
         @include tablet {
             height: initial;
@@ -61,6 +77,9 @@
     
     //menu opened
     //find a pet horizontal slider menu
+    #find-a-pet-submenu-close-button {
+        margin-bottom: 1rem;
+    }
     .find-a-pet-submenu {
         z-index: 100;
         position: absolute;
@@ -84,7 +103,7 @@
         //find a pet menu opened
         .find-a-pet-submenu {
             display: block;
-            width: 90%;
+            width: 100%;
             @include tablet {
                 //prevents problems when resizing in devtools
                 width: initial;
@@ -94,6 +113,9 @@
     
     
     @include tablet {
+        .site-header {
+            padding: 40px;
+        }
         .site-header.menu-closed {
             .expand-menu-item {
                 display: block;
@@ -117,6 +139,9 @@
             }
             nav a {
                 @include slideLinkHover;
+            }
+            #find-a-pet-dropdown-button {
+                margin-top: 0;
             }
         }
         .nav-top {

@@ -1,3 +1,4 @@
+//side bar link left border hover effect
 @mixin leftBorderHover($color: $secondary, $left-val: -12.5px) {
     &:before {
         content: '';

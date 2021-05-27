@@ -291,6 +291,7 @@ body {
   font-size: 2rem;
   font-family: 'Niconne', cursive;
   margin: 0;
+  padding: 0;
 }
 
 @supports (display: grid) {
@@ -300,6 +301,7 @@ body {
     color: white;
     height: 100vh;
     box-sizing: border-box;
+    padding: 20px;
   }
   .site-header li {
     margin: initial;
@@ -307,8 +309,25 @@ body {
   .site-header button {
     display: inline-block;
   }
+  .site-header #find-a-pet-dropdown-button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  @media (min-width: 700px) {
+    .site-header #find-a-pet-dropdown-button {
+      font-size: 1.2rem;
+    }
+  }
   .site-header li {
-    margin: 1rem 0;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  @media (min-width: 700px) {
+    .site-header li {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
   }
   @media (min-width: 700px) {
     .site-header {
@@ -325,6 +344,9 @@ body {
   }
   .site-header.menu-closed .expand-menu-item {
     display: none;
+  }
+  #find-a-pet-submenu-close-button {
+    margin-bottom: 1rem;
   }
   .find-a-pet-submenu {
     z-index: 100;
@@ -343,7 +365,7 @@ body {
   }
   #find-a-pet-dropdown.menu-opened .find-a-pet-submenu {
     display: block;
-    width: 90%;
+    width: 100%;
   }
   @media (min-width: 700px) {
     #find-a-pet-dropdown.menu-opened .find-a-pet-submenu {
@@ -351,6 +373,9 @@ body {
     }
   }
   @media (min-width: 700px) {
+    .site-header {
+      padding: 40px;
+    }
     .site-header.menu-closed .expand-menu-item {
       display: block;
     }
@@ -389,6 +414,9 @@ body {
     .site-header nav a:hover::after, .site-header nav a:focus::after {
       visibility: visible;
       width: 105%;
+    }
+    .site-header #find-a-pet-dropdown-button {
+      margin-top: 0;
     }
     .nav-top {
       grid-area: logo;
