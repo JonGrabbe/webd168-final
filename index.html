@@ -1,436 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Pet Place</title>
-    <link rel="stylesheet" href="css/main.min.css" />
-    <!--[if lte IE 9]>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Pet Place</title>
+  <link rel="stylesheet" href="css/main.min.css" />
+  <!--[if lte IE 9]>
       <link rel="stylesheet" href="css/ie8.css" />
     <![endif]-->
-    <noscript>
-      <style>
-        .content {
-          max-height: none;
-        }
-      </style>
-    </noscript>
-  </head>
+  <noscript>
+    <style>
+      .content {
+        max-height: none;
+      }
+    </style>
+  </noscript>
+</head>
 
-  <body>
-    <header>
-      <div id="menu" class="site-header menu-closed wrapper">
-        <div class="nav-top">
-          <h1 class="logo">
-            <a href="index.html">The Pet Place</a>
-          </h1>
-          <div class="controls">
-            <button id="menu-button" class="menu-button">
-              <img src="images/menu.svg" alt="" class="menu-button-icon" />
-            </button>
-          </div>
-        </div>
-        <div
-          id="find-a-pet-dropdown"
-          class="find-a-pet-dropdown expand-menu-item"
-        >
-          <button
-            id="find-a-pet-dropdown-button"
-            class="arrow-button-container"
-          >
-            Find a pet
-            <img class="arrow-right" src="images/arrow-down.svg" alt="" />
+<body>
+  <header>
+    <div id="menu" class="site-header menu-closed wrapper">
+      <div class="nav-top">
+        <h1 class="logo">
+          <a href="index.html">The Pet Place</a>
+        </h1>
+        <div class="controls">
+          <button id="menu-button" class="menu-button">
+            <img src="images/menu.svg" alt="" class="menu-button-icon" />
           </button>
-          <div class="find-a-pet-submenu">
-            <button id="find-a-pet-submenu-close-button">
-              <img src="images/arrow-down.svg" alt="" class="arrow-left" />
-            </button>
+        </div>
+      </div>
+      <div id="find-a-pet-dropdown" class="find-a-pet-dropdown expand-menu-item">
+        <button id="find-a-pet-dropdown-button" class="arrow-button-container">
+          search for pets
+          <img class="arrow-right" src="images/arrow-down.svg" alt="" />
+        </button>
+        <div class="find-a-pet-submenu">
+          <button id="find-a-pet-submenu-close-button">
+            <img src="images/arrow-down.svg" alt="" class="arrow-left" />
+          </button>
 
-            <nav>
-              <ul>
-                <li><a href="pages/adopt/dogs/dogs.html">Dogs</a></li>
-                <li><a href="pages/adopt/cats/index.html">Cats</a></li>
-                <li><a href="pages/adopt/horses/index.html">Horses</a></li>
-              </ul>
-            </nav>
+          <nav>
+            <ul>
+              <li><a href="pages/adopt/dogs/dogs.html">Dogs</a></li>
+              <li><a href="pages/adopt/cats/index.html">Cats</a></li>
+              <li><a href="pages/adopt/horses/index.html">Horses</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <nav class="bottom-menu expand-menu-item">
+        <ul>
+          <li><a href="pages/about/index.html#adopt">Adopt</a></li>
+          <li><a href="pages/about/index.html#rehome-a-pet">Rehome a pet</a></li>
+          <li><a href="pages/about/index.html#volunteer">Volunteer</a></li>
+          <li><a href="pages/about/index.html#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- banner img -->
+    <div class="site-banner-container">
+      <!-- <img src="images/banner.jpg" alt=""> -->
+      <h2 class="text">
+        browse throughout our selection of animals to find the perfect pet.
+      </h2>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- pets recently rescued -->
+    <div class="pet-cards-container main-content-wrapper">
+      <h2 class="heading">pets recently rescued</h2>
+      <div class="row">
+        <!-- pet card -->
+        <div class="pet-card" tabindex="0">
+          <h3 class="title">jasmine</h3>
+          <div class="bgc">
+            <div class="flip-wrapper">
+              <div class="flip-a menu">
+                <!-- animal thumbnail background image container -->
+                <img src="images/animals/dogs/jasmine.jpg" width="280" height="400" alt="Jasmine">
+              </div>
+              <div class="flip-b menu">
+                <!-- pet information -->
+                <ul>
+                  <li>Pitbull</li>
+                  <li>Female</li>
+                  <li>Adult</li>
+                  <li>Vaccinated</li>
+                  <li>Adoption fee: $100.00</li>
+                </ul>
+                <div class="buttons">
+                  <a class="slide-button-ani">Adopt</a>
+                  <a class="slide-button-ani">View More</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <nav class="bottom-menu expand-menu-item">
-          <ul>
-            <li><a href="pages/about/index.html#adopt">Adopt</a></li>
-            <li><a href="pages/about/index.html#rehome-a-pet">Rehome a pet</a></li>
-            <li><a href="pages/about/index.html#volunteer">Volunteer</a></li>
-            <li><a href="pages/about/index.html#about">About</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- banner img -->
-      <div class="site-banner-container">
-        <!-- <img src="images/banner.jpg" alt=""> -->
-        <h2 class="text">
-          browse throughout our selection of animals to find the perfect pet.
-        </h2>
-      </div>
-    </header>
-
-    <!-- MAIN -->
-    <main>
-      <!-- pets recently rescued -->
-      <div class="pet-cards-container main-content-wrapper">
-        <h2 class="heading">pets recently rescued</h2>
-        <div class="row">
-          <!-- pet card -->
-          <div class="pet-card" tabindex="0">
-            <h3 class="title">jasmine</h3>
-            <div class="bgc">
-              <div class="flip-wrapper">
-                <div class="flip-a menu">
-                  <!-- animal thumbnail background image container -->
-                  <img src="images/animals/dogs/jasmine.jpg" width="280" height="400" alt="Jasmine">
-                </div>
-                <div class="flip-b menu">
-                  <!-- pet information -->
-                  <ul>
-                    <li>Pitbull</li>
-                    <li>Female</li>
-                    <li>Adult</li>
-                    <li>Vaccinated</li>
-                    <li>Adoption fee: $100.00</li>
-                  </ul>
-                  <div class="buttons">
-                    <a class="slide-button-ani">Adopt</a>
-                    <a class="slide-button-ani">View More</a>
-                  </div>
+        <!-- pet card -->
+        <div class="pet-card" tabindex="0">
+          <h3 class="title">Luna</h3>
+          <div class="bgc">
+            <div class="flip-wrapper">
+              <div class="flip-a menu">
+                <!-- animal thumbnail background image container -->
+                <img src="images/animals/dogs/luna.jpg" width="280" height="400" alt="Luna">
+              </div>
+              <div class="flip-b menu">
+                <!-- pet information -->
+                <ul>
+                  <li>Huskey</li>
+                  <li>Female</li>
+                  <li>Adult</li>
+                  <li>Vaccinated</li>
+                  <li>Adoption fee: $100.00</li>
+                </ul>
+                <div class="buttons">
+                  <a class="slide-button-ani">Adopt</a>
+                  <a class="slide-button-ani">View More</a>
                 </div>
               </div>
             </div>
           </div>
-          <!-- pet card -->
-          <div class="pet-card" tabindex="0">
-            <h3 class="title">Luna</h3>
-            <div class="bgc">
-              <div class="flip-wrapper">
-                <div class="flip-a menu">
-                  <!-- animal thumbnail background image container -->
-                  <img src="images/animals/dogs/luna.jpg" width="280" height="400" alt="Luna">
-                </div>
-                <div class="flip-b menu">
-                  <!-- pet information -->
-                  <ul>
-                    <li>Huskey</li>
-                    <li>Female</li>
-                    <li>Adult</li>
-                    <li>Vaccinated</li>
-                    <li>Adoption fee: $100.00</li>
-                  </ul>
-                  <div class="buttons">
-                    <a class="slide-button-ani">Adopt</a>
-                    <a class="slide-button-ani">View More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- pet card -->
-          <div class="pet-card" tabindex="0">
-            <h3 class="title">Sarge</h3>
-            <div class="bgc">
-              <div class="flip-wrapper">
-                <div class="flip-a menu">
-                  <!-- animal thumbnail background image container -->
-                  <img src="images/animals/dogs/sarge.gif" width="280" height="400" alt="sarge">
-                </div>
-                <div class="flip-b menu">
-                  <!-- pet information -->
-                  <ul>
-                    <li>Redbone Coonhound </li>
-                    <li>Male</li>
-                    <li>Adult</li>
-                    <li>Vaccinated</li>
-                    <li>Adoption fee: $100.00</li>
-                  </ul>
-                  <div class="buttons">
-                    <a class="slide-button-ani">Adopt</a>
-                    <a class="slide-button-ani">View More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- pet card -->
-          <div class="pet-card" tabindex="0">
-            <h3 class="title">Sidney</h3>
-            <div class="bgc">
-              <div class="flip-wrapper">
-                <div class="flip-a menu">
-                  <!-- animal thumbnail background image container -->
-                  <img src="images/animals/dogs/sidney.jpg" width="280" height="400" alt="Sidney">
-                </div>
-                <div class="flip-b menu">
-                  <!-- pet information -->
-                  <ul>
-                    <li>Shepherd Mix</li>
-                    <li>Male</li>
-                    <li>Adult</li>
-                    <li>Vaccinated</li>
-                    <li>Adoption fee: $100.00</li>
-                  </ul>
-                  <div class="buttons">
-                    <a class="slide-button-ani">Adopt</a>
-                    <a class="slide-button-ani">View More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        <!-- end of row -->  
         </div>
-        <div class="center-div see-all-pets-link-container"><a href="pages/adopt/dogs/dogs.html" class="btn">See all dogs</a></div>
+        <!-- pet card -->
+        <div class="pet-card" tabindex="0">
+          <h3 class="title">Sarge</h3>
+          <div class="bgc">
+            <div class="flip-wrapper">
+              <div class="flip-a menu">
+                <!-- animal thumbnail background image container -->
+                <img src="images/animals/dogs/sarge.gif" width="280" height="400" alt="sarge">
+              </div>
+              <div class="flip-b menu">
+                <!-- pet information -->
+                <ul>
+                  <li>Redbone Coonhound </li>
+                  <li>Male</li>
+                  <li>Adult</li>
+                  <li>Vaccinated</li>
+                  <li>Adoption fee: $100.00</li>
+                </ul>
+                <div class="buttons">
+                  <a class="slide-button-ani">Adopt</a>
+                  <a class="slide-button-ani">View More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pet card -->
+        <div class="pet-card" tabindex="0">
+          <h3 class="title">Sidney</h3>
+          <div class="bgc">
+            <div class="flip-wrapper">
+              <div class="flip-a menu">
+                <!-- animal thumbnail background image container -->
+                <img src="images/animals/dogs/sidney.jpg" width="280" height="400" alt="Sidney">
+              </div>
+              <div class="flip-b menu">
+                <!-- pet information -->
+                <ul>
+                  <li>Shepherd Mix</li>
+                  <li>Male</li>
+                  <li>Adult</li>
+                  <li>Vaccinated</li>
+                  <li>Adoption fee: $100.00</li>
+                </ul>
+                <div class="buttons">
+                  <a class="slide-button-ani">Adopt</a>
+                  <a class="slide-button-ani">View More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of row -->
+      </div>
+      <div class="center-div see-all-pets-link-container"><a href="pages/adopt/dogs/dogs.html" class="btn">See all
+          dogs</a></div>
       <!-- end of pet-cards-container -->
-      </div>
+    </div>
 
 
-      <!-- drop down menus -->
-      <div class="dropdown-menu-container">
-        <div class="main-content-wrapper">
-          <h2>Information for new pet owners</h2>
-          <!-- dropdown menu -->
-          <div class="dropdown-menu-item">
-            <div class="collapsible">
-              <h3 class="heading">Adopting your first pet</h3>
-              <button>
-                <img src="images/arrow-down.svg" alt="" class="arrow" />
-              </button>
-            </div>
-            <div class="content">
-              <ul>
-                <li>How will other pets react to your new pet</li>
-                <li>Is your home suitable for an animal to live there?</li>
-                <li>
-                  Do you think the people you live with have allergies that are
-                  caused by pets?
-                </li>
-                <li>
-                  Who will take care of the pet when you are gone from home.
-                </li>
-                <li>
-                  Does your schedule allow you to take care of your pet? How
-                  will
-                </li>
-                <li>
-                  How will you take care of your pet when you are on vacation
-                </li>
-                <li>
-                  Does your pet fit your lifestyle? For example, if you are an
-                  active person you might want a dog that can go running with
-                  you.
-                </li>
-                <li>Can you handle training a pet?</li>
-                <li>How do you feel about traveling with your pet?</li>
-              </ul>
-            </div>
+    <!-- drop down menus -->
+    <div class="dropdown-menu-container">
+      <div class="main-content-wrapper">
+        <h2>Information for new pet owners</h2>
+        <!-- dropdown menu -->
+        <div class="dropdown-menu-item">
+          <div class="collapsible">
+            <h3 class="heading">Adopting your first pet</h3>
+            <button>
+              <img src="images/arrow-down.svg" alt="" class="arrow" />
+            </button>
           </div>
+          <div class="content">
+            <ul>
+              <li>How will other pets react to your new pet</li>
+              <li>Is your home suitable for an animal to live there?</li>
+              <li>
+                Do you think the people you live with have allergies that are
+                caused by pets?
+              </li>
+              <li>
+                Who will take care of the pet when you are gone from home.
+              </li>
+              <li>
+                Does your schedule allow you to take care of your pet? How
+                will
+              </li>
+              <li>
+                How will you take care of your pet when you are on vacation
+              </li>
+              <li>
+                Does your pet fit your lifestyle? For example, if you are an
+                active person you might want a dog that can go running with
+                you.
+              </li>
+              <li>Can you handle training a pet?</li>
+              <li>How do you feel about traveling with your pet?</li>
+            </ul>
+          </div>
+        </div>
 
-          <!-- dropdown menu -->
-          <div class="dropdown-menu-item">
-            <div class="collapsible">
-              <h3 class="heading">Costs of having a pet</h3>
-              <button>
-                <img src="images/arrow-down.svg" alt="" class="arrow" />
-              </button>
-            </div>
-            <div class="content">
-              <ul>
-                <li>Food costs</li>
-                <li>Veterinary care</li>
-                <li>Having your pet be spayed or neutered.</li>
-                <li>Licensing according to local regulations</li>
-                <li>Collars and leashes</li>
-                <li>Kitty litter and box</li>
-                <li>Grooming supplies</li>
-              </ul>
-              <h4>Optional costs</h4>
-              <ul>
-                <li>Training classes</li>
-                <li>Bed for your pet</li>
-                <li>A crate or carrier</li>
-                <li>
-                  A way to permanently identify your dog such as a microchip or
-                  tattoo
-                </li>
-              </ul>
-            </div>
+        <!-- dropdown menu -->
+        <div class="dropdown-menu-item">
+          <div class="collapsible">
+            <h3 class="heading">Costs of having a pet</h3>
+            <button>
+              <img src="images/arrow-down.svg" alt="" class="arrow" />
+            </button>
           </div>
-          <!-- dropdown menu -->
-          <div class="dropdown-menu-item">
-            <div class="collapsible">
-              <h3 class="heading">Responsibilities of owning a pet</h3>
-              <button>
-                <img src="images/arrow-down.svg" alt="" class="arrow" />
-              </button>
-            </div>
-            <div class="content">
-              <ul>
-                <li>
-                  Pets need to be fed three times a day and have constant access
-                  to fresh water
-                </li>
-                <li>
-                  Pet owners should give at least one hour per day of
-                  interaction to their pet.
-                </li>
-                <li>
-                  Giving your pet exercise is important to keep them sane and
-                  healthy
-                </li>
-              </ul>
-            </div>
+          <div class="content">
+            <ul>
+              <li>Food costs</li>
+              <li>Veterinary care</li>
+              <li>Having your pet be spayed or neutered.</li>
+              <li>Licensing according to local regulations</li>
+              <li>Collars and leashes</li>
+              <li>Kitty litter and box</li>
+              <li>Grooming supplies</li>
+            </ul>
+            <h4>Optional costs</h4>
+            <ul>
+              <li>Training classes</li>
+              <li>Bed for your pet</li>
+              <li>A crate or carrier</li>
+              <li>
+                A way to permanently identify your dog such as a microchip or
+                tattoo
+              </li>
+            </ul>
           </div>
-          <!-- dropdown menu -->
-          <div class="dropdown-menu-item">
-            <div class="collapsible">
-              <h3 class="heading">Items you need for a dog</h3>
-              <button>
-                <img src="images/arrow-down.svg" alt="" class="arrow" />
-              </button>
-            </div>
-            <div class="content">
-              <ul>
-                <li>Dog food</li>
-                <li>Water and food bowls</li>
-                <li>Leash</li>
-                <li>Collar</li>
-                <li>A long leash and a short one</li>
-                <li>Nail clippers</li>
-                <li>Plastic poop bags</li>
-                <li>Brush or comb</li>
-                <li>Dog shampoo and conditioner</li>
-              </ul>
-            </div>
+        </div>
+        <!-- dropdown menu -->
+        <div class="dropdown-menu-item">
+          <div class="collapsible">
+            <h3 class="heading">Responsibilities of owning a pet</h3>
+            <button>
+              <img src="images/arrow-down.svg" alt="" class="arrow" />
+            </button>
           </div>
-          <!-- dropdown menu -->
-          <div class="dropdown-menu-item">
-            <div class="collapsible">
-              <h3 class="heading">Items you need for a cats</h3>
-              <button>
-                <img src="images/arrow-down.svg" alt="" class="arrow" />
-              </button>
-            </div>
-            <div class="content">
-              <ul>
-                <li>Cat food</li>
-                <li>Food and water bowls</li>
-                <li>Kitty litter and box</li>
-                <li>Collar</li>
-                <li>Nail clippers</li>
-                <li>Feline toothbrush and toothpaste</li>
-                <li>Plastic carrier</li>
-              </ul>
-            </div>
+          <div class="content">
+            <ul>
+              <li>
+                Pets need to be fed three times a day and have constant access
+                to fresh water
+              </li>
+              <li>
+                Pet owners should give at least one hour per day of
+                interaction to their pet.
+              </li>
+              <li>
+                Giving your pet exercise is important to keep them sane and
+                healthy
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- dropdown menu -->
+        <div class="dropdown-menu-item">
+          <div class="collapsible">
+            <h3 class="heading">Items you need for a dog</h3>
+            <button>
+              <img src="images/arrow-down.svg" alt="" class="arrow" />
+            </button>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Dog food</li>
+              <li>Water and food bowls</li>
+              <li>Leash</li>
+              <li>Collar</li>
+              <li>A long leash and a short one</li>
+              <li>Nail clippers</li>
+              <li>Plastic poop bags</li>
+              <li>Brush or comb</li>
+              <li>Dog shampoo and conditioner</li>
+            </ul>
+          </div>
+        </div>
+        <!-- dropdown menu -->
+        <div class="dropdown-menu-item">
+          <div class="collapsible">
+            <h3 class="heading">Items you need for a cats</h3>
+            <button>
+              <img src="images/arrow-down.svg" alt="" class="arrow" />
+            </button>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Cat food</li>
+              <li>Food and water bowls</li>
+              <li>Kitty litter and box</li>
+              <li>Collar</li>
+              <li>Nail clippers</li>
+              <li>Feline toothbrush and toothpaste</li>
+              <li>Plastic carrier</li>
+            </ul>
           </div>
         </div>
       </div>
-      <!-- end of drop down menus container -->
+    </div>
+    <!-- end of drop down menus container -->
 
-      <section class="about main-content-wrapper">
-        <h2>About us</h2>
-        <p>
-          We are a non profit animal shelter our business is dependent on
-          adoption fees and donations. In our shelter we house dogs, cats,
-          horses and other animals. We also offer dog training classes for new
-          pet owners.
-        </p>
-        <h2>How to adopt a pet</h2>
-        <p>
-          First, find the pet you want and then you set up an appointment with a
-          staff member. To set up an appointment you can click adopt pet and
-          then fill out the necessary forms online then you will be given the
-          time to speak with our staff at the shelter. Or you can set up an
-          appointment through email or by phone if you prefer. You can call this
-          number 555-555-5555 or use this email animalshelter@gamil.com to talk
-          to an employee.
-        </p>
-        <h2>How to rehome a pet</h2>
-        <p>
-          In order to rehome a pet you have to schedule an appointment with one
-          of our staff members. Once you have an appointment, bring your pet to
-          the shelter and the shelter employee will decide whether or not to
-          take the pet in.
-        </p>
-        <h2>Volunteer</h2>
-        <p>
-          Our animal shelter relies heavily on volunteers in order to function.
-          If you are interested in helping out or want to meet other people who
-          have a similar interest in animals then we encourage you to sign up
-        </p>
-      </section>
-    </main>
+    <section class="about main-content-wrapper">
+      <h2>About us</h2>
+      <p>
+        We are a non profit animal shelter our business is dependent on
+        adoption fees and donations. In our shelter we house dogs, cats,
+        horses and other animals. We also offer dog training classes for new
+        pet owners.
+      </p>
+      <h2>How to adopt a pet</h2>
+      <p>
+        First, find the pet you want and then you set up an appointment with a
+        staff member. To set up an appointment you can click adopt pet and
+        then fill out the necessary forms online then you will be given the
+        time to speak with our staff at the shelter. Or you can set up an
+        appointment through email or by phone if you prefer. You can call this
+        number 555-555-5555 or use this email animalshelter@gamil.com to talk
+        to an employee.
+      </p>
+      <h2>How to rehome a pet</h2>
+      <p>
+        In order to rehome a pet you have to schedule an appointment with one
+        of our staff members. Once you have an appointment, bring your pet to
+        the shelter and the shelter employee will decide whether or not to
+        take the pet in.
+      </p>
+      <h2>Volunteer</h2>
+      <p>
+        Our animal shelter relies heavily on volunteers in order to function.
+        If you are interested in helping out or want to meet other people who
+        have a similar interest in animals then we encourage you to sign up
+      </p>
+    </section>
+  </main>
 
-    <footer class="site-footer">
-      <div>
-        Icons made by
-        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
-        <a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
-      </div>
-      <div>
-        Icons made by
-        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
-        <a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
-      </div>
-      <div>
-        Icons made by
-        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
-        <a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
-      </div>
-    </footer>
+  <footer class="site-footer">
+    <div>
+      Icons made by
+      <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+    <div>
+      Icons made by
+      <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+    <div>
+      Icons made by
+      <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+  </footer>
 
-    <a href="#" class="back-to-top-btn" id="back-to-top-btn">
-      <svg
-        version="1.1"
-        id="Capa_1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        x="0px"
-        y="0px"
-        viewBox="0 0 512.002 512.002"
-        style="enable-background: new 0 0 512.002 512.002"
-        xml:space="preserve"
-      >
+  <a href="#" class="back-to-top-btn" id="back-to-top-btn">
+    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+      y="0px" viewBox="0 0 512.002 512.002" style="enable-background: new 0 0 512.002 512.002" xml:space="preserve">
+      <g>
         <g>
-          <g>
-            <path
-              d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+          <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
                         L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
-                        l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"
-            />
-          </g>
+                        l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z" />
         </g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-      </svg>
-    </a>
+      </g>
+      <g></g>
+      <g></g>
+      <g></g>
+      <g></g>
+      <g></g>
+      <g></g>
+      <g></g>
+      <g></g>
+      <g></g>
+      <g></g>
+      <g></g>
+      <g></g>
+      <g></g>
+      <g></g>
+      <g></g>
+    </svg>
+  </a>
 
-    <!-- <noscript>
+  <!-- <noscript>
       <style>
         .content {
           max-height: none;
@@ -438,8 +417,9 @@
       </style>
     </noscript> -->
 
-    <script src="js/menu.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/drop-down-menu.js"></script>
-  </body>
+  <script src="js/menu.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/drop-down-menu.js"></script>
+</body>
+
 </html>
